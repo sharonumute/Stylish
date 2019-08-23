@@ -1,6 +1,7 @@
 :root {
   --main-bg-color: #252525;
   --black-modal: #111;
+  --dark-pit-modal: #1b1b1b;
   --modal-bg-color: #292929;
   --main-bg-onHover-color: #292929;
   --modal-bg-onHover-color: #333333;
@@ -8,18 +9,19 @@
   --white-average: rgba(255, 255, 255, 0.6);
   --white-caption: rgba(255, 255, 255, 0.5);
   --white-disabled: rgba(255, 255, 255, 0.2);
-  --light-blue-text: #aea0d1;
-  --soft-blue-text: #86caff;
+  --visited-text: #aea0d1;
+  --soft-blue-text: #99badd;
   --bright-blue-text: #4285f4;
   --bright-purple-text: #bb86fc;
-  --silver-border-color: rgba(223, 225, 229, 0.15);
-  --silver-border-light-color: rgba(223, 225, 229, 0.1);
+  --silver-border-color: rgba(223, 225, 229, 0.05);
+  --silver-border-light-color: rgba(223, 225, 229, 0.01);
   --dark-border-color: #333333;
   --darker-border-color: #1b1b1b;
   --dark-input-bg: #1b1b1b;
   --soft-red-text: #e9696b;
   --soft-green-text: #3d9970;
   --light-blue-hover: #e8f0fe;
+  --rounded-pill-radius: 20px;
 }
 
 /* 
@@ -50,9 +52,7 @@ html,
 /* Top appbar */
 #appbar,
 /*Search Page*/
-.sfbgg, .sfbgx,
-/* TODO Can't remeber what this was */
-.uais2d {
+.sfbgg, .sfbgx {
   background: var(--main-bg-color) !important;
 }
 
@@ -71,7 +71,13 @@ html,
 /*Related Activity*/
 .cUezCb,
 /* Search Tool Menu items */
-a.f9UGee {
+a.f9UGee,
+/* Search Results Scrollbar top, individual modal items */
+.uais2d,
+/* Your related search activity expanded*/
+.ViQXCb,
+/* Your related search activity expanded, options menu */
+.MWnpf {
   background-color: var(--modal-bg-color) !important;
 }
 
@@ -91,7 +97,11 @@ a.f9UGee {
 /* See Results About */
 .y8Jpof.rhsvw:hover,
 /* Search Tool Menu items */
-a.f9UGee:hover {
+a.f9UGee:hover,
+/* Search Results Scrollbar top, individual modal items */
+.uais2d:hover,
+/* Your related search activity expanded, options menu items */
+.gvybPb, .ErsxPb:active {
   background: var(--modal-bg-onHover-color) !important;
 }
 
@@ -112,6 +122,31 @@ a.f9UGee:hover {
 /*Inner borders*/
 .pVFdhc {
   background-color: var(--silver-border-color) !important;
+}
+
+/* Box shadow */
+/* Potential flights */
+a.NnEw9.Z24yNd,
+/* Something in Trips and explore. Continue exploring?*/
+.OgrsVd,
+/* Tracked flights modal. blue graph tooltip*/
+.gws-flights-savedflights__tooltip,
+/* Tracked flights modal. blue graph tooltip triangle*/
+.gws-flights-savedflights__tooltip.gws-flights-savedflights__right-tail::before,
+/* Something in flights*/
+.flt-elevation-1,
+.flt-elevation-3,
+/* Something in flights. Change Currency?*/
+.gb_id .gb_B,
+/* Suggested locations/hotels in flights card */
+.uKOpFp4SF2X__card,
+/* Something in flights. Flights menu?*/
+.z6mTee,
+/* Something in flights. Destination Background?*/
+.gws-flights__modal-dialog,
+/* Flight Date Picker. Hovered Date*/
+.gws-travel-calendar__day:not(.gws-travel-calendar__disabled):hover::after {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Input bars*/
@@ -158,19 +193,26 @@ cite a:visited,
 .thWgNb a,
 ._-fw,
 ._-fw a,
-.bb-seller {
+.bb-seller,
+/* Related search activity link*/
+.VeBrhd,
+/* Flights Tracking Price */
+.gws-flights-savedflights__tracked-flights-price .gws-flights-savedflights__current-price {
   color: var(--soft-green-text) !important;
 }
 
 /* Red texts */
 /* Search bar spell difference*/
-.spell-diff-red {
+.spell-diff-red,
+.d2IKib {
   color: var(--soft-red-text) !important;
 }
 
 /* Neon or bright blue texts*/
 /*Gooooooooogle page indicator*/
 #foot #navcnt .cur,
+/* Flights continue planning */
+.W0H1Me,
 /* See all flights*/
 .gws-flights-savedflights__booking-options, .gws-flights-savedflights__view-past-flights {
   color: var(--bright-blue-text) !important;
@@ -197,7 +239,9 @@ div.nnbOwe a, .DTgFX, .kVLSDc, .LlMFmd, .VDl3z, .JwgTNb, .LTTD0,
 /* See Results About */
 .xXEKkb,
 /* Flight recent search */
-.gws-flights__recent-search {
+.gws-flights__recent-search,
+/* Google Search suggestions Remove text*/
+.sbdb {
   color: var(--soft-blue-text) !important;
   text-decoration: none;
 }
@@ -206,7 +250,7 @@ div.nnbOwe a, .DTgFX, .kVLSDc, .LlMFmd, .VDl3z, .JwgTNb, .LTTD0,
 a:visited,
 /* Visited options in modal menus*/
 .mblink:visited {
-  color: var(--light-blue-text) !important;
+  color: var(--visited-text) !important;
 }
 
 /* White Bold texts */
@@ -225,9 +269,6 @@ html,
 .gsfi, .lst,
 /*Search bar suggestions */
 .sbdd_b, .sben_a, .sbl1,
-/* Search taskbar items on hover*/
-#hdtb-more-mn a:hover, #hdtb .hdtb-mitem a:hover, 
-.hdtb-mn-hd:hover, #hdtb-more:hover, #hdtb-tls:hover,
 /*Search Page*/
 .f,
 /* TODO: figure out what this is */
@@ -256,7 +297,15 @@ html,
 /* Google apps */
 .gb_V,
 /*Map search task bar*/
-.F7IIOc.rlf__open:not(.rlf__applied), .F7IIOc:not(.rlf__applied):hover {
+.F7IIOc.rlf__open:not(.rlf__applied), .F7IIOc:not(.rlf__applied):hover,
+/* Related search activity expanded menu items*/
+.eqVaGd,
+/* Search bar menu items */
+.il8Sef a.f9UGee,
+/* Search bar tools menu items */
+.hdtbItm.hdtbSel, #hdtb .hdtbItm a, #hdtb-more-mn a, #cdrlnk,
+/* Shooping items price tag top black bg */
+.w3MEU {
   color: var(--white-bold) !important;
 }
 
@@ -273,9 +322,6 @@ html,
 .gb_lb,
 /* Search bar answer texts */
 .mus_tt18, .mus_tt17,
-/* Search taskbar items*/
-#hdtb .hdtb-mitem a,
-#hdtb-msb #hdtb-more, #hdtb-msb #hdtb-tls, .F7IIOc,
 /* App bar: The "About xxxxx results (x.xx seconds)" bar*/
 #resultStats,
 /* TODO Can't remeber what this was */
@@ -309,7 +355,9 @@ html,
 /* News time */
 .Seyk7e,
 /* Search Page */
-.Od5Jsd {
+.Od5Jsd,
+/* Related search activity expanded visted time */
+.TJ45mf {
   color: var(--white-caption) !important;
 }
 
@@ -372,7 +420,10 @@ From "Google - Clean Dark"
 /* Trips footer */
 .ksBjEc:not(:disabled),
 /* Google Home page search buttons */
-.jhp input[type="submit"], .sbdd_a input, .gbqfba {
+.jhp input[type="submit"], .sbdd_a input, .gbqfba ,
+/* Search taskbar items*/
+#hdtb .hdtb-mitem a,
+#hdtb-msb #hdtb-more, #hdtb-msb #hdtb-tls, .F7IIOc {
   background: transparent !important;
   background-color: transparent !important;
   border: 1px solid transparent !important;
@@ -390,31 +441,68 @@ From "Google - Clean Dark"
 /* Google Home page search buttons */
 .jhp input[type="submit"]:hover, .sbdd_a input:hover, .gbqfba:hover,
 /* Google homepage tips buttons */
-.gb_1.gb_nd:hover {
+.gb_1.gb_nd:hover,
+/* Search taskbar items on hover*/
+#hdtb-more-mn a:hover, #hdtb .hdtb-mitem a:hover, 
+.hdtb-mn-hd:hover, #hdtb-more:hover, 
+/* Selected Search taskbar tools button*/
+#hdtb-msb #hdtb-tls:hover,
+/* Selected Search taskbar tab*/
+#hdtb-msb .hdtb-mitem.hdtb-msel:hover {
   background: var(--modal-bg-onHover-color) !important;
   cursor: pointer !important;
 }
 
-/*Round Buttons*/
+/*Round Or Pill Buttons*/
 /*Books and Other tabs*/
-.VvrH3b {
-  background: var(--modal-bg-color) !important;
-  border: 1px var(--silver-border-color) solid !important;
-  border-radius: 20px;
+.VvrH3b, 
+/* Related Search activity suggestions */
+.jxhPC,
+/* Shopping Go button */
+.LfUe1b {
+  background: var(--dark-pit-modal) !important;
+  background-color: var(--dark-pit-modal) !important;
+  border: 1px transparent solid !important;
+  border-radius: var(--rounded-pill-radius);
 }
-.x9emld {
+/*Round Or Pill Buttons text*/
+/*Books and Other tabs*/
+.x9emld,
+/* Related Search activity suggestions */
+.eD7Msb,
+/* Shopping Go button */
+.LfUe1b {
   color: var(--white-bold) !important;
 }
-/*Round Buttons on Hover*/
+/*Round Or Pill Buttons on Hover*/
 /*Books and Other tabs*/
-.VvrH3b:hover {
+.VvrH3b:hover, 
+/* Related Search activity suggestions */
+.jxhPC:hover,
+/* Shopping Go button */
+.LfUe1b:hover {
   background: var(--modal-bg-onHover-color) !important;
-  border: 1px var(--silver-border-light-color) solid !important;
+  background-color: var(--modal-bg-onHover-color) !important;
+  border: 1px transparent solid !important;
+}
+
+/* Floaty X icon on Related Search activity suggestions */
+.eB45Qe .A9kVrc {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--modal-bg-onHover-color) 50%
+  ) !important;
+}
+/* Floaty X icon on Related Search activity suggestions, on hover */
+.J9shxf {
+  background-color: var(--dark-pit-modal) !important;
 }
 
 /* Underline */
 /* Google news title on hover */
-.phYMDf:hover {
+.phYMDf:hover,
+.oBrLN:hover {
   text-decoration: underline;
 }
 
@@ -532,7 +620,7 @@ span.qB1pae {
 /* Search Bar */
 /* Inner Divider between input and suggestions */
 .xtSCL {
-  border-top: 1px solid var(--silver-border-color);
+  border-top: 1px solid var(--silver-border-color) !important;
 }
 .ac-renderer {
   background-color: var(--dark-input-bg) !important;
@@ -572,6 +660,11 @@ span.qB1pae {
 }
 
 /* Search bar and Search tools*/
+/* Search taskbar bar*/
+body.vasq #hdtbSum {
+  height: 51px !important;
+}
+
 /* Little Icons near Taskbar items*/
 .HF9Klc {
   margin-right: 5px;
@@ -583,6 +676,21 @@ span.qB1pae {
 .ZYMsjf svg {
   height: 12px;
   width: 12px;
+}
+
+/* Search taskbar tabs*/
+.hdtb-mitem.hdtb-msel,
+.hdtb-mitem a,
+#hdtb-msb #hdtb-tls {
+  padding: 10px !important;
+  border-radius: var(--rounded-pill-radius);
+}
+
+/* Selected Search taskbar tab*/
+#hdtb-msb .hdtb-mitem.hdtb-msel {
+  border-bottom: 3px solid var(--bright-blue-text) !important;
+  color: var(--bright-blue-text) !important;
+  border-radius: 10px 10px 0 0 !important;
 }
 
 #hdtb-msb .hdtb-tl-sel,
@@ -660,7 +768,7 @@ span.qB1pae {
 }
 
 .aR1mEe {
-  background-color: var(--dark-input-bg) !important;
+  background-color: var(--dark-pit-modal) !important;
   border-bottom-color: transparent !important;
 }
 .vk_arc {
@@ -735,15 +843,10 @@ span.qB1pae {
   background: var(--modal-bg-color) !important;
   color: var(--white-average) !important;
 }
+
+/* Shopping Go button */
 .LfUe1b {
-  padding: 3px !important;
-  background: var(--modal-bg-color) !important;
-  border: 1px solid var(--dark-border-color) !important;
-  color: var(--white-average) !important;
-  border-radius: 20px;
-}
-.LfUe1b:hover {
-  background: var(--modal-bg-onHover-color) !important;
+  padding: 8px !important;
 }
 .modal-dialog-buttons button:hover,
 .modal-dialog-buttons button:active {
@@ -999,17 +1102,17 @@ span._Ezj,
   border-color: var(--silver-border-color) transparent !important;
 }
 .SOTxMc {
-  border-bottom: unset;
+  border-bottom: unset !important;
   background: var(--modal-bg-color);
 }
 .foGkcf {
-  background: unset;
+  background: unset !important;
 }
 .ZCCsLe {
-  margin-top: 8px;
+  margin-top: 8px !important;
 }
 .minidiv .ZCCsLe {
-  margin-top: 11px;
+  margin-top: 11px !important;
 }
 .hBUZL,
 .Y6Fvnc,
@@ -1269,9 +1372,6 @@ More in Code 3*/
   border-radius: 4px;
 }
 
-.flt-elevation-3 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
-}
 .gws-flights-form__airport-input::before {
   border: 1px solid transparent !important;
 }
@@ -1292,7 +1392,6 @@ More in Code 3*/
 .uKOpFp4SF2X__card {
   background-color: var(--modal-bg-color) !important;
   background: var(--modal-bg-color) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 
 .uKOpFp4SF2X__info-container .uKOpFp4SF2X__card-header h3 {
@@ -1354,7 +1453,6 @@ footer > div {
 .z6mTee {
   background-color: var(--modal-bg-color) !important;
   color: var(--white-average) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 .X4hwq {
   color: var(--white-average) !important;
@@ -1485,7 +1583,6 @@ destination-picker > div {
 .gws-flights__modal-dialog {
   background-color: var(--modal-bg-color) !important;
   background: var(--modal-bg-color) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 .fsapp-distance {
   color: var(--white-caption) !important;
@@ -1554,7 +1651,6 @@ destination-picker .sbsb_c:hover {
 .gws-travel-calendar__day:not(.gws-travel-calendar__disabled):hover::after {
   background-color: var(--modal-bg-onHover-color) !important;
   border: 2px solid var(--bright-blue-text) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 
 .gws-travel-calendar__selected-day::after {
@@ -1609,13 +1705,16 @@ destination-picker .sbsb_c:hover {
 }
 
 /* Trips and Explore */
+/* Continue exploring inner border */
+.fEQure {
+  border-top: 1px solid var(--silver-border-color) !important;
+}
 .FBsWCd {
   color: var(--white-bold) !important;
 }
 
 .OgrsVd {
   background-color: var(--dark-input-bg) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
   color: var(--white-bold) !important;
 }
 .xdFAM,
@@ -1702,7 +1801,7 @@ li.sbsb_c.UNaUJe,
 
 .gws-flights-savedflights__empty-state-animation-container {
   background: #fff;
-  border-radius: 20px;
+  border-radius: var(--rounded-pill-radius);
 }
 /* Move Animated seats by 40 */
 .gws-flights-savedflights__blue-seat {
@@ -1752,11 +1851,9 @@ li.sbsb_c.UNaUJe,
 }
 .gws-flights-savedflights__tooltip {
   border: 2px solid transparent !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 .gws-flights-savedflights__tooltip.gws-flights-savedflights__right-tail::before {
   border: 2px solid transparent;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 
 .gws-flights-savedflights__modernized-remove-button.gws-flights-savedflights__selected:not(.gws-flights-savedflights__disabled),
@@ -1784,9 +1881,6 @@ li.sbsb_c.UNaUJe,
 
 .gws-flights-savedflights__tracked-flights-card {
   background-color: var(--modal-bg-color) !important;
-}
-.flt-elevation-1 {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 
 .flt-subhead1 {
@@ -1823,7 +1917,6 @@ li.sbsb_c.UNaUJe,
 .gb_id .gb_B {
   background-color: var(--modal-bg-color) !important;
   background: var(--modal-bg-color) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 
 #gb .gb_id a.gb_tb.gb_tb {
