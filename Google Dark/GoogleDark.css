@@ -52,7 +52,15 @@ html,
 /* Top appbar */
 #appbar,
 /*Search Page*/
-.sfbgg, .sfbgx {
+.sfbgg, .sfbgx,
+/* Google flights results */
+.gws-flights-results__results
+/* Google flight result pills */,
+.ksYYHb::before, .ksYYHb::after,
+/*prices are currently high*/
+.KTe3od .gws-flights-widgets-expandablecard__body, .KTe3od .gws-flights-widgets-expandablecard__back-top,
+/* Explore flights */
+.UK6Qid {
   background: var(--main-bg-color) !important;
 }
 
@@ -77,8 +85,23 @@ a.f9UGee,
 /* Your related search activity expanded*/
 .ViQXCb,
 /* Your related search activity expanded, options menu */
-.MWnpf {
+.MWnpf,
+/*flight resul items*/
+.gws-flights-results__result-item-summary,
+.gws-flights-results__itinerary-card-summary,
+.gws-flights-results__itinerary-card .gws-flights-widgets-expandablecard__body,
+.gws-flights-results__itinerary-card
+  .gws-flights-widgets-expandablecard__back-top,
+  /*flight map switch*/
+  .tBwvfb {
   background-color: var(--modal-bg-color) !important;
+}
+
+/* Flight map bubbles */
+.mxKLHPdhMgZ__outer-bubble::before,
+.mxKLHPdhMgZ__outer-bubble .mxKLHPdhMgZ__inner-bubble {
+  background-color: var(--modal-bg-onHover-color) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Dark Modal On Hover Background */
@@ -101,7 +124,9 @@ a.f9UGee:hover,
 /* Search Results Scrollbar top, individual modal items */
 .uais2d:hover,
 /* Your related search activity expanded, options menu items */
-.gvybPb, .ErsxPb:active {
+.gvybPb, .ErsxPb:active,
+/*flights results more*/
+.gws-flights-results__dominated-toggle {
   background: var(--modal-bg-onHover-color) !important;
 }
 
@@ -115,13 +140,40 @@ a.f9UGee:hover,
 /*Related Activity*/
 .cUezCb,
 /* Bubbled Search Results */
-.exp-outline {
+.exp-outline,
+/* Google flight search pill items */
+.ksYYHb,
+/*fligh confirmed, booking options*/
+.gws-flights-book__booking-options-outline {
   border: 1px solid var(--silver-border-color) !important;
 }
 /* All silver borders: Objects that use bg color */
 /*Inner borders*/
 .pVFdhc {
   background-color: var(--silver-border-color) !important;
+}
+.gws-flights-results__dominated-toggle::before,
+.gws-flights-results__result-item-content-border {
+  background: transparent !important;
+}
+/* All silver borders: Objects that use box shadow color */
+/* Something from Google flights*/
+.gws-flights-widgets-expandablecard__elevation-0,
+.gws-flights-widgets-expandablecard__elevation-0
+  .gws-flights-widgets-expandablecard__back-bottom::before,
+  /*Flight confirm*/
+  .adRUrd {
+  box-shadow: 0 0 0 1px var(--silver-border-color) !important;
+}
+.gws-flights-widgets-expandablecard__elevation-0
+  .gws-flights-widgets-expandablecard__back-top,
+.gws-flights-widgets-expandablecard__elevation-1
+  .gws-flights-widgets-expandablecard__back-top {
+  box-shadow: none !important;
+}
+.gws-flights-widgets-expandablecard__elevation-0.gws-flights-widgets-expandablecard__transition
+  > .gws-flights-widgets-expandablecard__header {
+  box-shadow: 0 0 0 1px transparent !important;
 }
 
 /* Box shadow */
@@ -147,6 +199,17 @@ a.NnEw9.Z24yNd,
 /* Flight Date Picker. Hovered Date*/
 .gws-travel-calendar__day:not(.gws-travel-calendar__disabled):hover::after {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+}
+/* Some flight stuff */
+.gws-flights-widgets-expandablecard__elevation-1,
+.gws-flights-widgets-expandablecard__elevation-1
+  .gws-flights-widgets-expandablecard__back-bottom::before {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.gws-flights-widgets-expandablecard__elevation-1.gws-flights-widgets-expandablecard__transition
+  > .gws-flights-widgets-expandablecard__header {
+  box-shadow: none !important;
 }
 
 /* Input bars*/
@@ -335,7 +398,9 @@ html,
 /* Wikipedia "X: xyx"*/
 .P1usbc,
 /* Google tips content*/
-.gb_gd {
+.gb_gd,
+/* Flights search */
+.gws-flights-dialog__destination-details {
   color: var(--white-average) !important;
 }
 
@@ -357,7 +422,11 @@ html,
 /* Search Page */
 .Od5Jsd,
 /* Related search activity expanded visted time */
-.TJ45mf {
+.TJ45mf,
+/*flight result amenities*/
+.gws-flights-results__amenities li,
+/*flight sort button*/
+.gws-flights-results__sort-button {
   color: var(--white-caption) !important;
 }
 
@@ -423,12 +492,17 @@ From "Google - Clean Dark"
 .jhp input[type="submit"], .sbdd_a input, .gbqfba ,
 /* Search taskbar items*/
 #hdtb .hdtb-mitem a,
-#hdtb-msb #hdtb-more, #hdtb-msb #hdtb-tls, .F7IIOc {
-  background: transparent !important;
-  background-color: transparent !important;
+#hdtb-msb #hdtb-more, #hdtb-msb #hdtb-tls, .F7IIOc,
+/*flight confirm*/
+.Tvmvt.PHEte {
+  background: var(--main-bg-color) !important;
+  background-color: var(--main-bg-color) !important;
   border: 1px solid transparent !important;
   color: var(--white-bold) !important;
   font-weight: bold;
+}
+.Tvmvt.PHEte {
+  box-shadow: unset !important;
 }
 
 /* Flat Buttons On Hover */
@@ -448,7 +522,9 @@ From "Google - Clean Dark"
 /* Selected Search taskbar tools button*/
 #hdtb-msb #hdtb-tls:hover,
 /* Selected Search taskbar tab*/
-#hdtb-msb .hdtb-mitem.hdtb-msel:hover {
+#hdtb-msb .hdtb-mitem.hdtb-msel:hover,
+/*flight confirm*/
+.Tvmvt.PHEte:hover {
   background: var(--modal-bg-onHover-color) !important;
   cursor: pointer !important;
 }
@@ -459,7 +535,9 @@ From "Google - Clean Dark"
 /* Related Search activity suggestions */
 .jxhPC,
 /* Shopping Go button */
-.LfUe1b {
+.LfUe1b,
+/* Google flight pill search items */
+.ksYYHb {
   background: var(--dark-pit-modal) !important;
   background-color: var(--dark-pit-modal) !important;
   border: 1px transparent solid !important;
@@ -480,7 +558,9 @@ From "Google - Clean Dark"
 /* Related Search activity suggestions */
 .jxhPC:hover,
 /* Shopping Go button */
-.LfUe1b:hover {
+.LfUe1b:hover,
+/* Google flight pill search items */
+.ksYYHb:hover {
   background: var(--modal-bg-onHover-color) !important;
   background-color: var(--modal-bg-onHover-color) !important;
   border: 1px transparent solid !important;
@@ -1293,6 +1373,70 @@ More in Code 3*/
 }
 
 /* Flights */
+.gws-flights-widgets-expandablecard__expanded
+  > .gws-flights-widgets-expandablecard__header {
+  border-color: unset !important;
+}
+
+/*Flight confirmed*/
+.gws-flights-book__trip-summary-container,
+.gws-flights-book__partner-bar,
+.gws-flights-book__book-bar {
+  background: var(--main-bg-color) !important;
+}
+.gws-flights-book__book-bar,
+.flt-headline1 {
+  color: var(--white-bold) !important;
+}
+
+.gws-flights__footer-background {
+  border-top: none !important;
+}
+
+.XkMipe {
+  border-bottom: 1px solid transparent !important;
+}
+
+.gws-flights__footer-controls {
+  border-bottom: 1px solid var(--silver-border-color) !important;
+}
+
+/*Location search*/
+.fQg6Pb,
+.vLVdRd {
+  background-color: var(--dark-input-bg) !important;
+}
+
+/* result hover callout */
+.gws-flights__time-callout,
+call-out,
+.gws-flights__time-callout.flt-body2.gws-flights-widgets-callout__callout.gws-flights-widgets-callout__center.gws-flights-widgets-callout__bottom.gws-flights-widgets-callout__padding,
+call-out.gws-flights__time-callout.flt-body2.gws-flights-widgets-callout__callout.gws-flights-widgets-callout__center.gws-flights-widgets-callout__bottom.gws-flights-widgets-callout__padding {
+  background-color: var(--modal-bg-onHover-color) !important;
+  background: var(--modal-bg-onHover-color) !important;
+}
+.gws-flights__breadcrumb-popup-times .gws-flights__breadcrumb-popup-times-value,
+.gws-flights__breadcrumb-popup-times-value,
+.gws-flights__offset-days {
+  color: var(--white-bold) !important;
+}
+.gws-flights-widgets-callout__arrow,
+div.gws-flights-widgets-callout__arrow.gws-flights-widgets-callout__arrow-bg,
+div.gws-flights-widgets-callout__arrow.gws-flights-widgets-callout__arrow-fg.export-arrow {
+  border-bottom-color: var(--modal-bg-onHover-color) !important;
+}
+/* Fligths result expanded back effect */
+.gws-flights-widgets-expandablecard__back-bottom {
+  display: none !important;
+}
+/* Fligths result borders */
+.gws-flights-form__slice-search {
+  border-bottom: 1px solid var(--silver-border-color) !important;
+}
+.PA2oGe {
+  border-left: 1px solid transparent !important;
+}
+
 /* Header */
 .gb_na {
   color: var(--white-bold) !important;
