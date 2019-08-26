@@ -746,7 +746,7 @@ span.double-date-picker-cal, ._v4r {
 .u80vZ, .cu-container .mnr-c {
     background-color: var(--modal-bg-color) !important;
 }
-.IxBI8c, .R9zNe, .uWmgv, .J8cLR, .Hg3mWc {
+.IxBI8c, .R9zNe, .uWmgv, .J8cLR {
     border-color: var(--dark-border-color) !important;
     background: var(--main-bg-color) !important;
 }
@@ -1743,7 +1743,7 @@ canvas.ita-hwt-canvas {
     background-color: var(--main-bg-color) !important;
 }
 .knowledge-finance-wholepage-chart__fw-uch .uch-svg {
-    color: var(--white-average);
+    color: var(--white-average) !important;
 }
 .Uo6gve {
     background-color: transparent!important;
