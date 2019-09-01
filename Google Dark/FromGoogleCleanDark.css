@@ -76,7 +76,7 @@ https://userstyles.org/styles/144028/google-clean-dark
 .qbh, #qbx {
     filter: invert(0.8)!important;
 }
-._OQi, #gsr > div:nth-child(n), .EPLo7b {
+._OQi, #gsr > div:nth-child(n){
     border-color: var(--dark-border-color) !important;
 }
 #qbut .qbptr, #qbft .qbptr {
@@ -326,19 +326,19 @@ div.EETcFd {
 ._wD:hover {
     background: #383838!important;
 }
-.kp-blk, .EDOqlf, .AYBNrd td, .AYBNrd, .yyjhs {
+ .EDOqlf, .AYBNrd td, .AYBNrd, .yyjhs {
     background: var(--modal-bg-color) !important;
 }
 .HIf9ae {
     background-color: transparent!important;
 }
 .kno-ecr-pt, .garHBe, .Ss2Faf, .Z0LcW, .rreh .BbbuR, .webanswers-webanswers_table__webanswers-table th, .KMdzJ, .HXw9bb {
-    color: rgba(206, 206, 206, 0.87)!important;
+    color: var(--white-bold) !important;
 }
 ._W5e, .tuHUkb, .KJXbRb {
     color: var(--white-caption)  !important;
 }
-.kp-blk .xpdclose ._wle, .kp-blk .xpdopen ._xle,  ._G4n td, .kp-blk .xpdclose .farUxc, .kp-blk .xpdopen .mJ2Mod, .Id2KGe, .j9AJ5d li, .EDOqlf, .AYBNrd td, .AYBNrd, .ccBEnf, .ksSzJd .TZahnb, .ksSzJd .NY3LVe, .tGgE5d, .wlqJjf.gws-local-riddler__banner-shown, .XQvBOc, .jktSrf td, .ytJVH, .IKKnpb, .r3tGed, .tsp-tlc, .tsp-tz, .u80vZ, .webanswers-webanswers_table__webanswers-table tr, .iT3aZd+div, .cRXWJb, .i4J0ge > div > div > div, .cv2VAd, .vk_c, .vk_cxp, #rhs .fIcnad, .cbphWd {
+.kp-blk .xpdclose ._wle, .kp-blk .xpdopen ._xle,  ._G4n td, .kp-blk .xpdclose .farUxc, .kp-blk .xpdopen .mJ2Mod, .Id2KGe, .j9AJ5d li, .EDOqlf, .AYBNrd td, .AYBNrd, .ccBEnf, .ksSzJd .TZahnb, .ksSzJd .NY3LVe, .tGgE5d, .wlqJjf.gws-local-riddler__banner-shown, .XQvBOc, .ytJVH, .IKKnpb, .r3tGed, .tsp-tlc, .tsp-tz, .u80vZ, .webanswers-webanswers_table__webanswers-table tr, .iT3aZd+div, .cRXWJb, .i4J0ge > div > div > div, .vk_c, .vk_cxp, #rhs .fIcnad, .cbphWd {
     border-color: var(--silver-border-color)!important;
 }
 .scrt tr td {
@@ -679,7 +679,7 @@ span.double-date-picker-cal, ._v4r {
     color: var(--white-caption)  !important;
 }
 .KpG9if, .GEIdOb, .sCXuv, .wYWDAd, .zkIadb, .yPHXsc>div {
-    border-color: var(--dark-border-color) !important;
+    border-color: transparent !important;
 }
 .FjdPod, .EBe2gf span, .BTtC6e, .QeuQGc, .Lrszfb, .A9x0mb {
     filter: invert(1)!important;
@@ -775,7 +775,7 @@ span.double-date-picker-cal, ._v4r {
 .sxIvj, .ecRggb {
     background-color: var(--modal-bg-color) !important;
 }
-.fa1VEe, .jA1nid, .KjyTCd, .qmv19b {
+.fa1VEe, .jA1nid, .KjyTCd {
     border-color: var(--dark-border-color) !important;
 }
 .tb_l {
@@ -913,7 +913,7 @@ hr {
 ._S5o {
     border-color: var(--dark-border-color) !important;
 }
-._W6g._Dbj, g-inner-card {
+._W6g._Dbj{
     background: var(--modal-bg-color) !important;
 }
 #rhs_block > div.g.rhsvw.kno-kp.mnr-c.g-blk > div.kp-blk.knowledge-panel.Wnoohf.OJXvsb > div > div.ifM9O > div:nth-child(n) > div:nth-child(n) > div > div > div {
@@ -1568,7 +1568,9 @@ canvas.ita-hwt-canvas {
 }
 /* Feed */
  g-inner-card {
-    background-color: #282828!important;
+    background-color: var(--modal-bg-color) !important;
+    border-color: transparent !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
 }
 /* Places */
  ._xe {
@@ -2189,7 +2191,7 @@ div.otByu div.cwqNnb span.BFlQMb {
 }
 /** Tools ***/
  .kp-blk a, .FiHGpc {
-    background: var(--modal-bg-color) !important;
+    background: var(--main-bg-color) !important;
 }
 .FiHGpc {
     color: var(--white-average)!important;
@@ -2252,7 +2254,7 @@ a.scCTtb div {
  .sbibod {
     border-color: transparent!important;
 }
-li.sbsb_c:first-child, .kp-blk {
+li.sbsb_c:first-child{
     border-color: var(--dark-border-color) !important;
 }
 .gb_fa {

@@ -76,7 +76,7 @@ html,
 .cF4V5c,
 /* TODO Can't remeber what this was */
 .ab_dropdown,
-/*Related Activity*/
+/* Related Activity */
 .cUezCb,
 /* Search Tool Menu items */
 a.f9UGee,
@@ -93,7 +93,9 @@ a.f9UGee,
 .gws-flights-results__itinerary-card
   .gws-flights-widgets-expandablecard__back-top,
   /*flight map switch*/
-  .tBwvfb {
+  .tBwvfb ,
+  /* Video search result thumbnails*/
+  .Rd246b {
   background-color: var(--modal-bg-color) !important;
 }
 
@@ -126,7 +128,9 @@ a.f9UGee:hover,
 /* Your related search activity expanded, options menu items */
 .gvybPb, .ErsxPb:active,
 /*flights results more*/
-.gws-flights-results__dominated-toggle {
+.gws-flights-results__dominated-toggle,
+/* Things to do in */
+.jktSrf td:hover {
   background: var(--modal-bg-onHover-color) !important;
 }
 
@@ -174,6 +178,49 @@ a.f9UGee:hover,
 .gws-flights-widgets-expandablecard__elevation-0.gws-flights-widgets-expandablecard__transition
   > .gws-flights-widgets-expandablecard__header {
   box-shadow: 0 0 0 1px transparent !important;
+}
+
+/* Recipies */
+.dU5Kl {
+  background-color: var(--bright-blue-text) !important;
+  color: var(--white-bold) !important;
+  border: 1px solid transparent !important;
+}
+/*Chevron Arrow*/
+.xxjNNe {
+  color: var(--white-bold) !important;
+}
+/* White Line */
+.q6PGbe {
+  border-bottom: 1px solid transparent !important;
+}
+/* Item text */
+.L5KuY {
+  color: var(--white-average) !important;
+}
+
+/* Transparent Borders*/
+/* Google Apps Menu */
+.gb_B {
+  border: 0px solid transparent !important;
+}
+.wYWDAd {
+  border-top: 1px solid transparent !important;
+}
+/* Top Stories */
+.qmv19b {
+  border-color: transparent !important;
+}
+.EPLo7b {
+  border-top: 1px solid transparent !important;
+}
+/*Things to do in*/
+.jktSrf td.qbghke {
+  border-color: transparent !important;
+}
+.jktSrf td,
+.jktSrf {
+  border: transparent 1px solid !important;
 }
 
 /* Box shadow */
@@ -233,12 +280,6 @@ input::placeholder {
   color: var(--white-caption) !important;
 }
 
-/* Transparent Border */
-/* Google Apps Menu */
-.gb_B {
-  border: 0px solid transparent !important;
-}
-
 /* Green texts */
 /* Search result sub links */
 .a,
@@ -276,9 +317,17 @@ cite a:visited,
 #foot #navcnt .cur,
 /* Flights continue planning */
 .W0H1Me,
+/* Map result buttons*/
+.VByer .UbRuwe, .L48Cpd .BSaJxc,
+/* Map result buttons icons: Globe*/
+.L48Cpd .XBBs5,
 /* See all flights*/
 .gws-flights-savedflights__booking-options, .gws-flights-savedflights__view-past-flights {
   color: var(--bright-blue-text) !important;
+}
+/* Map result buttons icons: Directions*/
+.VByer .TU05kd {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%234285f4' d='M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
 }
 
 /* Blue Text*/
@@ -368,7 +417,11 @@ html,
 /* Search bar tools menu items */
 .hdtbItm.hdtbSel, #hdtb .hdtbItm a, #hdtb-more-mn a, #cdrlnk,
 /* Shooping items price tag top black bg */
-.w3MEU {
+.w3MEU,
+/* Knowledge Panel Peaople Searched for*/
+.PtFZn,
+/* Wikipedia "X: xyx"*/
+.P1usbc {
   color: var(--white-bold) !important;
 }
 
@@ -395,12 +448,12 @@ html,
 .uqw8Lc,
 /*Books and Other tabs*/
 .cmlJmd,
-/* Wikipedia "X: xyx"*/
-.P1usbc,
 /* Google tips content*/
 .gb_gd,
 /* Flights search */
-.gws-flights-dialog__destination-details {
+.gws-flights-dialog__destination-details,
+/* Song lyric source */
+.j04ED {
   color: var(--white-average) !important;
 }
 
@@ -426,7 +479,13 @@ html,
 /*flight result amenities*/
 .gws-flights-results__amenities li,
 /*flight sort button*/
-.gws-flights-results__sort-button {
+.gws-flights-results__sort-button,
+/* Bubbles results date */
+.kX21rb,
+/* "Related Search" */
+.oaSpFd,
+/* Knowledge panel captions */
+.xlBGCb {
   color: var(--white-caption) !important;
 }
 
@@ -450,9 +509,19 @@ html,
   box-shadow: none;
   box-shadow: none;
   border-radius: 8px;
-  background: var(--modal-bg-color) !important;
-  border: 1px solid var(--silver-border-color) !important;
+  background: var(--main-bg-color) !important;
+  border: 1px solid transparent !important;
   color: var(--white-bold) !important;
+}
+
+/* Knwledge Panel*/
+.TieM1d {
+  background: var(--modal-bg-color) !important;
+}
+
+/* Related Search items */
+.oBrLN {
+  text-align: center !important;
 }
 
 /* Special Cases */
@@ -625,6 +694,10 @@ body.hp #lga {
   background-size: 92px 30px !important;
   width: 92px;
 }
+/* 
+TODO modify to handle doodles
+use source in img instead of hiding 
+*/
 #hplogo {
   background: unset !important;
 }
@@ -852,17 +925,17 @@ body.vasq #hdtbSum {
   border-bottom-color: transparent !important;
 }
 .vk_arc {
-  border-top: 1px solid var(--silver-border-color);
+  border-top: 1px solid var(--silver-border-color) !important;
 }
 
 /* The giant Chevron for show more/less*/
 /*Grammer Box Show More/Less*/
 .vk_aru:after {
-  border-bottom: 16px solid var(--main-bg-color);
+  border-bottom: 16px solid var(--main-bg-color) !important;
 }
 /* Knowledge Panel Show More/Less*/
 .vk_ard:after {
-  border-top: 16px solid var(--modal-bg-color);
+  border-top: 16px solid var(--modal-bg-color) !important;
 }
 
 /* Shopping Page */
@@ -1370,6 +1443,11 @@ More in Code 3*/
 }
 .fB3vD {
   color: var(--white-bold) !important;
+}
+
+img.KJ3c0b.M5mFPb {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='white' fill-opacity='0.87' d='M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+  src: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='white' fill-opacity='0.87' d='M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
 }
 
 /* Flights */
