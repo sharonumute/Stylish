@@ -1,0 +1,166 @@
+Prefered white: #E1E1E1
+Preferred black: #1F2123
+
+=========================================
+ppe.delve.office.com
+
+CSS
+.modal-89 {
+    background-color: #1F2123 !important;
+    outline-color: transparent !important;
+}
+
+.messageBarText-79 {
+    color: #E1E1E1 !important;
+}
+
+.uploadHeader-78 {
+    color:  #E1E1E1 !important;
+}
+
+.closeButton-98 {
+    color:  #E1E1E1 !important;
+}
+
+.fileInputButton-108:active {
+    color: rgb(0, 58, 104) !important
+}
+
+.ExpandedProfileProperty-module__icon__3cLl3 {
+   color:  #E1E1E1 !important;
+}
+
+.fabric-module__ms-font-s__2Zdp1 {
+   color:  #E1E1E1 !important;
+}
+
+=========================================
+www.google.*
+www.google.*.*
+
+INVERT
+.gb_hc
+.gb_ec
+.gb_x.gb_Vb
+.gb_0b
+#dictionary-modules img
+a[title="Google Apps"]
+a.gb_b > div
+
+CSS
+.RNNXgb {
+    box-shadow: 0 0 0 0.6px !important;
+}
+
+body, #appbar {
+    background-color: #1E1E1E !important;
+}
+
+#hdtbSum, .sfbg  {
+   background-color: #232326 !important;
+}
+
+#hdtb {
+    border-bottom-color: transparent !important;
+}
+
+.RNNXgb {
+   background-color: #1B1D23 !important;
+    border-top-color: #1E1E1E !important;
+    border-right-color: #1E1E1E !important;
+    border-bottom-color: #1E1E1E !important;
+    border-left-color: #1E1E1E !important;
+}
+
+.s .st em, 
+.st.s.std em,
+.P1usbc {
+    color: #D7DBDF !important;
+}
+
+#hdtb-msb #hdtb-more, 
+#hdtb-msb #hdtb-tls, 
+#hdtb .hdtb-mitem a, 
+.st, 
+.zECGdd,
+.f, .f a:link, .m, #resultStats, .wwUB2c,
+#kno-share-button, a.gb_x a.gb_ac {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+a.Ndm45b {
+    color: #bdc4cc !important;
+}
+
+
+a:link, .w, 
+#prs a:visited, 
+#prs a:active, 
+.q:active, 
+.q:visited, 
+.kl:active, 
+.tbotu {
+    color: #61a8ff !important;
+}
+
+.a, cite, cite a:link, cite a:visited, .cite, .cite:link, #nygTcd > i, .bc a:link,
+.cJzOGc {
+    color: #55a362 !important;
+}
+
+
+.rc {
+    background-color: #232326 !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+}
+
+#botstuff {
+    padding: 0 20px !important;
+}
+
+.knowledge-panel {
+    border-color: transparent !important;
+}
+
+#rhs .Wnoohf .xpdopen .yp1CPe, #rhs .OJXvsb .xpdclose .siXlze {
+    border-top-color: #1E1E1E !important;
+    border-right-color: #1E1E1E !important;
+    border-bottom-color: #1E1E1E !important;
+    border-left-color: #1E1E1E !important;
+}
+
+.kno-mrg {
+    border-radius: 8px !important;
+}
+
+.mJ2Mod {
+    border-top-color: transparent !important;
+}
+
+.PFaeqe {
+    right: 20px !important;
+    bottom: -8px !important;
+    border-radius: 8px !important;
+    background-color: #1E1E1E !important;
+    -webkit-transition: padding-bottom 0.2s ease-in-out !important;
+}
+
+.PFaeqe:hover {
+    padding-bottom: 5px !important;
+}
+
+a.fl {
+    color: rgba(255,255,255,0.9) !important;
+    text-decoration: none !important;
+    text-shadow: unset !important;
+}
+
+.PFaeqe a.fl {
+    display: inline-block !important;
+    padding: 10px !important;
+}
+
+.kno-mrg .PFaeqe a.fl {
+    font-size: small !important;
+}
