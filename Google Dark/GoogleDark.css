@@ -2351,3 +2351,54 @@ span.rllt__wrapped > span {
     color: var(--bright-blue-text) !important;
     font-weight: normal;
 }
+
+/* Google Accounts modal */
+/* Camera button*/
+.gb_l .gb_lb {
+    background: var(--modal-bg-color) !important;
+}
+.gb_mb {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+        0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+}
+.gb_mb:hover {
+    background-color: var(--modal-bg-onHover-color) !important;
+}
+
+.gb_mb:hover > svg.gb_nb {
+    fill: currentColor;
+}
+.gb_mb > svg.gb_nb {
+    color: var(--white-average) !important;
+    fill: currentColor;
+}
+/* Name */
+.gb_l .gb_ob,
+.gb_3b {
+    color: var(--white-bold) !important;
+}
+/* Big buttons */
+.gb_ub.gb_ub,
+.gb_Fb:hover,
+.gb_Fb.gb_Fb,
+.gb_Hb.gb_Hb {
+    background-color: var(--main-bg-color) !important;
+    border: none !important;
+}
+
+/* Add account button*/
+.gb_yb.gb_yb {
+    background-color: var(--modal-bg-color) !important;
+    border: none !important;
+}
+.gb_yb:hover {
+    background-color: var(--modal-bg-onHover-color) !important;
+    border: none !important;
+}
+
+.gb_Lb,
+.gb_Eb {
+    border-top: none !important;
+    border-bottom: none !important;
+}
