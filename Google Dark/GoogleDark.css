@@ -1,14 +1,28 @@
+/* 
+  By Sharon Umute
+  CSS Code 1
+  URL's matching:
+  https://(www|books|encrypted|accounts|translate).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})?/(?!maps|doodles|advanced|history|preferences|intl|services|work|wallet|fonts|travel/hotels|travel/packages).*
+*/
+
 :root {
-    --main-bg-color: #252525;
+    --dark-input-bg: #121212;
+    --dark-pit-modal: #1e1e1e;
+    --main-bg-color: #202020;
+    --main-bg-onHover-color: #272727;
+    --modal-bg-color: #272727;
+    --modal-bg-onHover-color: #2e2e2e;
+    --modal2-bg-color: #2e2e2e;
+    --modal2-bg-onHover-color: #333333;
+    --modal-pill-color: #303030;
+    --modal-pill-onHover-color: #393939;
+    --modal3-bg-color: #404040;
+    --modal3-bg-onHover-color: #494949;
     --black-modal: #111;
-    --dark-pit-modal: #1b1b1b;
-    --modal-bg-color: #292929;
-    --main-bg-onHover-color: #292929;
-    --modal-bg-onHover-color: #333333;
     --white-bold: rgba(255, 255, 255, 0.87);
     --white-average: rgba(255, 255, 255, 0.6);
-    --white-caption: rgba(255, 255, 255, 0.5);
-    --white-disabled: rgba(255, 255, 255, 0.2);
+    --white-caption: rgba(255, 255, 255, 0.38);
+    --white-disabled: #5f6368;
     --visited-text: #aea0d1;
     --soft-blue-text: #99badd;
     --bright-blue-text: #4285f4;
@@ -17,12 +31,12 @@
     --silver-border-light-color: rgba(223, 225, 229, 0.01);
     --dark-border-color: #333333;
     --darker-border-color: #1b1b1b;
-    --dark-input-bg: #1b1b1b;
     --soft-red-text: #e9696b;
     --soft-green-text: #3d9970;
     --light-blue-hover: #e8f0fe;
     --rounded-pill-radius: 20px;
     --svg-color: #5f6368;
+    --svg2-color: #9aa0a6;
 }
 
 /* 
@@ -54,6 +68,8 @@ html,
 #appbar,
 /*Search Page*/
 .sfbgg, .sfbgx,
+/* Image search */
+.jZWadf,
 /* Google flights results */
 .gws-flights-results__results
 /* Google flight result pills */,
@@ -116,7 +132,7 @@ a.f9UGee,
 /* Google Accounts Menu Account Buttons */
 .gb_Ob:hover,
 /* Search bar suggestions*/
-.sbsb_d, .sbhl,
+.sbsb_d, .sbhl, .oLTrhd:hover, .NHmwv,
 /* Something in search bar*/
 .ac-active,
 /* TODO Can't remeber what this was */
@@ -150,7 +166,9 @@ a.f9UGee:hover,
 /* Google flight search pill items */
 .ksYYHb,
 /*fligh confirmed, booking options*/
-.gws-flights-book__booking-options-outline {
+.gws-flights-book__booking-options-outline,
+/* Google Images Search */
+.TwNUtc {
     border: 1px solid var(--silver-border-color) !important;
 }
 /* All silver borders: Objects that use bg color */
@@ -166,7 +184,7 @@ a.f9UGee:hover,
 /* Something from Google flights*/
 .gws-flights-widgets-expandablecard__elevation-0,
 .gws-flights-widgets-expandablecard__elevation-0
-  .gws-flights-widgets-expandablecard__back-bottom::before,
+  .gws-flights-widgets-expandablecard__back-bottom::before, 
   /*Flight confirm*/
   .adRUrd {
     box-shadow: 0 0 0 1px var(--silver-border-color) !important;
@@ -252,7 +270,9 @@ a.NnEw9.Z24yNd,
 /* Some flight stuff */
 .gws-flights-widgets-expandablecard__elevation-1,
 .gws-flights-widgets-expandablecard__elevation-1
-    .gws-flights-widgets-expandablecard__back-bottom::before {
+    .gws-flights-widgets-expandablecard__back-bottom::before, .P1WQH, .EkeHle,
+/* Shopping items */
+.sh-dlr__list-result {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -264,7 +284,7 @@ a.NnEw9.Z24yNd,
 /* Input bars*/
 /* All inputs*/
 input {
-    background: var(--dark-input-bg);
+    background: var(--dark-input-bg) !important;
     color: var(--white-bold) !important;
 }
 
@@ -273,9 +293,14 @@ input {
 .sbsb_a,
 .RNNXgb,
 .aajZCb,
-.sbibod {
+.sbibod,
+.BncaVb,
+/* Image search bar */
+.zthhpf,
+.lV0vqc {
     background: var(--dark-input-bg) !important;
     color: var(--white-bold) !important;
+    border-color: transparent !important;
 }
 
 input::placeholder {
@@ -293,13 +318,13 @@ cite a:visited,
 #_bGc > i,
 .bc a:link,
 /* Something from shopping */
-.OpIWmf,
+.OpIWmf, .T14wmb, .Ju3hxd,
 /* Seller info from Shopping*/
 .thWgNb,
 .thWgNb a,
 ._-fw,
 ._-fw a,
-.bb-seller,
+.bb-seller, .Si09te, .KiwNL,
 /* Related search activity link*/
 .VeBrhd,
 /* Flights Tracking Price */
@@ -352,7 +377,7 @@ a.iu-card-header:hover, a.iu-card-header:visited, .wUrVib, a.fl:link,
 ._PXi, ._Mft, ._CSo, .SDZsVb, .SW5pqf, .wUrVib, .wyNFW, .EZRelc, 
 div.nnbOwe a, .DTgFX, .kVLSDc, .LlMFmd, .VDl3z, .JwgTNb, .LTTD0, 
 .gt-baf-word-selected > span, .TYiug,.DLOTif,
-.B7A8m, .MGCMLc, .pTGxbb, .kp-blk a,
+.B7A8m, .MGCMLc, .pTGxbb, .kp-blk a, .B6K6ne,
 /* See Results About */
 .xXEKkb,
 /* Flight recent search */
@@ -366,7 +391,8 @@ div.nnbOwe a, .DTgFX, .kVLSDc, .LlMFmd, .VDl3z, .JwgTNb, .LTTD0,
 /* All visited links */
 a:visited,
 /* Visited options in modal menus*/
-.mblink:visited {
+.mblink:visited,
+.pLcvLb:visited .B6K6ne {
     color: var(--visited-text) !important;
 }
 
@@ -385,7 +411,7 @@ html,
 /* Search bar input */
 .gsfi, .lst,
 /*Search bar suggestions */
-.sbdd_b, .sben_a, .sbl1,
+.sbdd_b, .sben_a, .sbl1, .o44hBf, .oLTrhd:hover, .NHmwv,
 /*Search Page*/
 .f,
 /* TODO: figure out what this is */
@@ -404,7 +430,7 @@ html,
 .VNSPub,
 /* Shopping titles */
 .cZhvcd,
-.kHxwFf ,
+.kHxwFf, .VZTCjd h3,
 /* Search Results drop down */
 .action-menu-item a.fl,
 /* News Author */
@@ -426,7 +452,16 @@ html,
 /* Knowledge Panel Peaople Searched for*/
 .PtFZn,
 /* Wikipedia "X: xyx"*/
-.P1usbc {
+.P1usbc,
+/*Google image searches*/
+.WGvvNb,
+.RScZKc, .W8wzH,
+/* Knowledge Panel big rating */
+ .xt8Uw, 
+ /* Shopping */
+ .E5ocAb,
+ /* Flight header */
+ .gws-flights__header-image-text, .BgYkof {
     color: var(--white-bold) !important;
 }
 
@@ -446,7 +481,7 @@ html,
 /* App bar: The "About xxxxx results (x.xx seconds)" bar*/
 #resultStats, #result-stats,
 /* TODO Can't remeber what this was */
-.V7X3Je,
+.V7X3Je, .U6puSd,
 /*See Results About*/
 .y8Jpof, .y8Jpof .LrzXr,
 /*Related Activity*/
@@ -512,7 +547,6 @@ html,
 /* Discover more*/
 .mnr-c .uOaWdb, .uOaWdb {
     box-shadow: none;
-    box-shadow: none;
     border-radius: 8px;
     background: var(--main-bg-color) !important;
     border: 1px solid transparent !important;
@@ -558,10 +592,6 @@ From "Google - Clean Dark"
 .gb_sb .gb_tb,
 /* TODO Can't remeber what this was */
 .ab_button,
-/* Flight explore button */
-.RQn3j,
-/* Trips footer */
-.ksBjEc:not(:disabled),
 /* Google Home page search buttons */
 .jhp input[type="submit"], .sbdd_a input, .gbqfba ,
 /*flight confirm*/
@@ -579,7 +609,9 @@ From "Google - Clean Dark"
 #hdtb .hdtb-mitem a,
 #hdtb-msb #hdtb-more,
 #hdtb-msb #hdtb-tls,
-.F7IIOc {
+.F7IIOc,
+/* Image search */
+.NZmxZe, .PNyWAd.w6lkhd, .PNyWAd.ZXJQ7c {
     background: var(--main-bg-color) !important;
     background-color: var(--main-bg-color) !important;
     border: 1px solid transparent !important;
@@ -605,8 +637,10 @@ From "Google - Clean Dark"
 /* Selected Search taskbar tab*/
 #hdtb-msb .hdtb-mitem.hdtb-msel:hover,
 /*flight confirm*/
-.Tvmvt.PHEte:hover {
-    background: var(--modal-bg-onHover-color) !important;
+.Tvmvt.PHEte:hover,
+/* Image search */
+.NZmxZe:hover, .PNyWAd.w6lkhd:hover, .PNyWAd.ZXJQ7c:hover {
+    background: var(--main-bg-onHover-color) !important;
     cursor: pointer !important;
 }
 
@@ -615,8 +649,6 @@ From "Google - Clean Dark"
 .VvrH3b, 
 /* Related Search activity suggestions */
 .jxhPC,
-/* Shopping Go button */
-.LfUe1b,
 /* Google flight pill search items */
 .ksYYHb {
     background: var(--dark-pit-modal) !important;
@@ -647,6 +679,18 @@ From "Google - Clean Dark"
     border: 1px transparent solid !important;
 }
 
+/* Shopping Go button */
+.LfUe1b,
+.sh-dr__prs {
+    background: var(--dark-pit-modal) !important;
+    background-color: var(--dark-pit-modal) !important;
+    border: 1px transparent solid !important;
+    border-radius: var(--rounded-pill-radius);
+    padding: 2px 5px;
+    cursor: pointer !important;
+    color: var(--white-average) !important;
+}
+
 /* Floaty X icon on Related Search activity suggestions */
 .eB45Qe .A9kVrc {
     background-image: linear-gradient(
@@ -670,7 +714,7 @@ From "Google - Clean Dark"
 /* Icons and Images */
 /*Knowledege Panel Share icon*/
 .rsir2d {
-    color: var(--white-average) !important;
+    color: var(--svg-color) !important;
     opacity: 1 !important;
 }
 /*Color Picker share*/
@@ -686,8 +730,8 @@ div.tiM5gc > span {
 }
 /* Knowledge Panel Like Dislike */
 .h7xSye {
-    border: 1px solid var(--white-average) !important;
-    fill: var(--white-average) !important;
+    border: 1px solid var(--svg-color) !important;
+    fill: var(--svg-color) !important;
 }
 /* Google logo white instead of colored */
 body.hp #lga {
@@ -722,7 +766,6 @@ Use the white, 9 box, icon instead of the black one
 Gets image from a sheet, use 'background-position' to pick desired image
 **/
 .gb_sc {
-    background-image: url(//ssl.gstatic.com/gb/images/i1_1967ca6a.png);
     -webkit-background-size: 528px 68px;
     background-size: 528px 68px;
 }
@@ -732,11 +775,11 @@ Gets image from a sheet, use 'background-position' to pick desired image
 }
 /* White 'x' icon on Bubbled Search results*/
 .XCKyNd {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' fill='white'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' fill='%235f6368'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
 }
 /* Black Play button for video thumbnails*/
 span.qB1pae {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='%23000'%3E%3Cpath d='M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 29V15l12 9-12 9z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='%23fff'%3E%3Cpath d='M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm-4 29V15l12 9-12 9z'/%3E%3C/svg%3E") !important;
     color: #000;
 }
 /* White Chevron In scrollable suggestions for image search*/
@@ -744,7 +787,7 @@ span.qB1pae {
 .k2Oeod.SkGIjd .S2C1T,
 .BlOseb.MFTKyf .KkkQv,
 .k2Oeod.MFTKyf .S2C1T {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='white' fill-opacity='0.6' d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%235f6368' fill-opacity='1' d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
     height: 24px !important;
     width: 24px !important;
 }
@@ -765,28 +808,32 @@ span.qB1pae {
 }
 /* White Settings Icon for Shopping tab*/
 .pFjJHd {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='white' fill-opacity='0.6' d='M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%235f6368' fill-opacity='1' d='M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z'/%3E%3C/svg%3E") !important;
 }
 /* White Help icon for Shopping tab*/
 .TcdDld {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='white' fill-opacity='0.6' d='M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%235f6368' fill-opacity='1' d='M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 /* White bookmark icon for Shopping tab */
 .jJQNbd {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='white' fill-opacity='0.6' d='M19 18l2 1V3c0-1.1-.9-2-2-2H8.99C7.89 1 7 1.9 7 3h10c1.1 0 2 .9 2 2v13zM15 5H5c-1.1 0-2 .9-2 2v16l7-3 7 3V7c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill='%235f6368' fill-opacity='1' d='M19 18l2 1V3c0-1.1-.9-2-2-2H8.99C7.89 1 7 1.9 7 3h10c1.1 0 2 .9 2 2v13zM15 5H5c-1.1 0-2 .9-2 2v16l7-3 7 3V7c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E") !important;
 }
 /* White grid icon for Shopping tab */
 .Ytbez {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='white' fill-opacity='0.6' d='M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%235f6368' fill-opacity='1' d='M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
 }
 /* White Share to Phone Icon*/
 .i8Msie {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill= 'white' fill-opacity='0.6' d='M17 1.01L7 1c-1.1 0-1.99.9-1.99 2v18c0 1.1.89 2 1.99 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14zm-4.2-5.78v1.75l3.2-2.99L12.8 9v1.7c-3.11.43-4.35 2.56-4.8 4.7 1.11-1.5 2.58-2.18 4.8-2.18z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0V0z'/%3E%3Cpath fill= '%235f6368' fill-opacity='1' d='M17 1.01L7 1c-1.1 0-1.99.9-1.99 2v18c0 1.1.89 2 1.99 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14zm-4.2-5.78v1.75l3.2-2.99L12.8 9v1.7c-3.11.43-4.35 2.56-4.8 4.7 1.11-1.5 2.58-2.18 4.8-2.18z'/%3E%3C/svg%3E") !important;
 }
 
 /* Search Bar */
 /* Inner Divider between input and suggestions */
-.xtSCL {
+.xtSCL,
+.fNHVKc,
+.UwAaac,
+li.sbsb_c:first-child .sbse,
+.HPi5Cd {
     border-top: 1px solid var(--silver-border-color) !important;
 }
 .ac-renderer {
@@ -794,7 +841,7 @@ span.qB1pae {
     border-color: var(--dark-input-bg) !important;
 }
 .sbpqs_a {
-    color: var(--bright-purple-text);
+    color: var(--visited-text);
 }
 #qbi {
     filter: invert(0.8) !important;
@@ -828,12 +875,15 @@ span.qB1pae {
 
 /* Search bar and Search tools*/
 /* Search taskbar bar*/
-body.vasq #hdtbSum {
+body.vasq #hdtbSum, 
+/* Image Search */
+.jZWadf {
     height: 51px !important;
 }
 
 /* Little Icons near Taskbar items*/
-.HF9Klc {
+.HF9Klc,
+.m3kSL {
     margin-right: 5px;
     vertical-align: text-bottom;
     margin-bottom: 2px;
@@ -848,13 +898,16 @@ body.vasq #hdtbSum {
 /* Search taskbar tabs*/
 .hdtb-mitem.hdtb-msel,
 .hdtb-mitem a,
-#hdtb-msb #hdtb-tls {
+#hdtb-msb #hdtb-tls,
+/* Image search */
+.NZmxZe, .PNyWAd.w6lkhd, .PNyWAd.ZXJQ7c {
     padding: 10px !important;
     border-radius: var(--rounded-pill-radius);
 }
 
 /* Selected Search taskbar tab*/
-#hdtb-msb .hdtb-mitem.hdtb-msel {
+#hdtb-msb .hdtb-mitem.hdtb-msel,
+span.rQEFy.NZmxZe {
     border-bottom: 3px solid var(--bright-blue-text) !important;
     color: var(--bright-blue-text) !important;
     border-radius: 10px 10px 0 0 !important;
@@ -883,7 +936,7 @@ body.vasq #hdtbSum {
     border: none !important;
 }
 .mn-dwn-arw {
-    border-color: var(--white-caption) transparent !important;
+    border-color: var(--svg-color) transparent !important;
 }
 .cdr_sep {
     border-top: 1px solid var(--dark-border-color) !important;
@@ -1019,6 +1072,9 @@ body.vasq #hdtbSum {
 .modal-dialog-buttons button:active {
     border: 1px solid var(--dark-border-color) !important;
 }
+.HUZACb {
+    border-bottom: unset !important;
+}
 .sh-dp__cont,
 ._-du,
 .sh-gs__rs-sep,
@@ -1094,7 +1150,7 @@ span._Ezj,
 }
 
 .O8U6h {
-    color: var(--white-bold) !important;
+    color: var(--soft-green-text) !important;
 }
 .sh-dp__arrow::before {
     border-bottom-color: var(--main-bg-color) !important;
@@ -1469,6 +1525,65 @@ img.KJ3c0b.M5mFPb {
     > .gws-flights-widgets-expandablecard__header {
     border-color: unset !important;
 }
+.gws-flights-widgets-expandablecard__header {
+    border-bottom: unset !important;
+}
+
+.gb_sa.gb_Za.gb_Ue.gb_Qd.gb_Ec {
+    background: var(--main-bg-color) !important;
+}
+.mSPnZKpnf91__menu {
+    background-color: var(--modal3-bg-color) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+}
+.mSPnZKpnf91__menu-item:hover {
+    background-color: var(--modal3-bg-onHover-color) !important;
+}
+
+.gws-flights-filter__filter-dialog-close:hover {
+    background-color: var(--modal2-bg-onHover-color) !important;
+}
+
+.gws-flights__dialog-scroll-region::before,
+.gws-flights__dialog-scroll-region::after {
+    background-color: unset !important;
+}
+
+.gws-flights-results__price.gws-flights-results__cheapest-price {
+    color: var(--soft-green-text) !important;
+}
+
+.gws-flights-results__seat-normal {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235f6368' width='18px' height='18px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M5 12V3H3v9c0 2.76 2.24 5 5 5h6v-2H8c-1.66 0-3-1.34-3-3zm15.5 6H19v-7c0-1.1-.9-2-2-2h-5V3H6v8c0 1.65 1.35 3 3 3h7v7h4.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.gws-flights__main [tabindex='0']:hover {
+    cursor: pointer;
+    background-color: var(--modal2-bg-onHover-color) !important;
+    border-radius: 8px !important;
+}
+
+.gws-flights__list-checkbox-item {
+    color: var(--white-bold) !important;
+}
+
+.gws-flights__list-checkbox-item::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235f6368' width='24px' height='24px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E") !important;
+    left: 0;
+}
+.gws-flights__list-checkbox-item.gws-flights__selected::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2399badd' width='24px' height='24px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM17.99 9l-1.41-1.42-6.59 6.59-2.58-2.57-1.42 1.41 4 3.99z'/%3E%3C/svg%3E") !important;
+}
+
+.gws-flights-filter__only-toggle {
+    background: var(--modal2-bg-color) !important;
+    color: var(--bright-blue-text) !important;
+}
+
+.gws-flights__flex-rigid,
+.pFcRPd {
+    border-radius: 50% !important;
+}
 
 /*Flight confirmed*/
 .gws-flights-book__trip-summary-container,
@@ -1481,8 +1596,40 @@ img.KJ3c0b.M5mFPb {
     color: var(--white-bold) !important;
 }
 
+/* Image invert */
+.StYgtd,
+.soKt7b,
+.gws-flights__hero-header {
+    filter: invert(100%) invert(0%) sepia(10%) saturate(100%) hue-rotate(180deg)
+        brightness(105%) contrast(75%) !important;
+}
+.FBsWCd,
+.gws-flights__header-image-text-container {
+    filter: invert(1) !important;
+}
+
+.t50xE {
+    background-image: unset !important;
+    background-color: var(--modal-bg-color) !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+}
+
+.ksBjEc:not(:disabled) {
+    color: var(--bright-blue-text) !important;
+}
+
 .gws-flights__footer-background {
     border-top: none !important;
+}
+
+.RvcXFe,
+.AdWm1c {
+    color: var(--white-caption) !important;
+}
+
+.pFcRPd {
+    background-color: var(--soft-red-text) !important;
+    color: var(--white-bold) !important;
 }
 
 .XkMipe {
@@ -1557,6 +1704,34 @@ div.gws-flights-widgets-callout__arrow.gws-flights-widgets-callout__arrow-fg.exp
     width: 74px;
 }
 
+.Ps3GYc {
+    background-color: var(--modal-bg-color) !important;
+    border: unset !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+}
+.MtZfLb {
+    color: var(--white-bold) !important;
+}
+
+.QNFV9b {
+    background-color: var(--soft-green-text) !important;
+    color: var(--white-bold) !important;
+}
+.fliUrd {
+    color: var(--white-bold) !important;
+}
+
+.gws-flights-results__dominated-toggle {
+    border-radius: 8px !important;
+}
+.qCDCmf {
+    color: var(--bright-blue-text) !important;
+}
+.grU0Gc .BU1gb {
+    background-color: var(--modal-bg-color) !important;
+    border-radius: 8px !important;
+}
+
 /* Swapper */
 .gws-flights-form__swapper-half-circle {
     background-color: var(--modal-bg-onHover-color) !important;
@@ -1592,9 +1767,25 @@ div.gws-flights-widgets-callout__arrow.gws-flights-widgets-callout__arrow-fg.exp
 .gws-flights-form__form-fake-bottom,
 .gws-flights-form__form-fake-bottom::before,
 .gws-flights-form__slice,
-.gws-flights-form__add-slice-wrapper {
+.gws-flights-form__add-slice-wrapper,
+.P1WQH,
+.EkeHle {
     background-color: var(--modal-bg-color) !important;
     background: var(--modal-bg-color) !important;
+}
+.gws-flights-form__form-card {
+    padding: 8px 8px 32px !important;
+}
+.gws-flights-widgets-expandablecard__header
+    .gws-flights-results__select-button.CpMx2b.LZHEY.flt-subhead2.RQn3j {
+    background-color: var(--bright-blue-text) !important;
+}
+.gws-flights-results__select-button.CpMx2b.LZHEY.flt-subhead2.RQn3j:hover {
+    background-color: var(--soft-green-text) !important;
+}
+
+.EkeHle {
+    border: unset !important;
 }
 
 .flt-body1 {
@@ -1622,7 +1813,14 @@ div.gws-flights-widgets-callout__arrow.gws-flights-widgets-callout__arrow-fg.exp
 
 .gws-flights-form__calendar-icon,
 .gws-flights-form__location-icon {
-    color: var(--soft-blue-text) !important;
+    color: var(--svg-color) !important;
+}
+.gws-travel-calendar__annotation.gws-travel-calendar__good-price {
+    color: var(--soft-green-text) !important;
+}
+
+.gws-travel-calendar__annotation {
+    color: var(--white-disabled) !important;
 }
 
 .uKOpFp4SF2X__card {
@@ -1663,6 +1861,7 @@ footer > div {
 
 .gws-flights__logo-container {
     width: 150px !important;
+    display: flex;
 }
 .gws-flights__logo:before {
     background: url(https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png)
@@ -1817,8 +2016,8 @@ destination-picker > div {
     border-bottom: 1px solid var(--silver-border-color) !important;
 }
 .gws-flights__modal-dialog {
-    background-color: var(--modal-bg-color) !important;
-    background: var(--modal-bg-color) !important;
+    background-color: var(--modal2-bg-color) !important;
+    background: var(--modal2-bg-color) !important;
 }
 .fsapp-distance {
     color: var(--white-caption) !important;
@@ -1847,7 +2046,8 @@ destination-picker .sbsb_c:hover {
     border-bottom: 1px solid var(--silver-border-color) !important;
     border-top: 1px solid var(--silver-border-color) !important;
 }
-.tj3PF.i88iIb {
+.tj3PF.i88iIb,
+.tj3PF {
     background-color: var(--modal-bg-color) !important;
     border-color: unset !important;
     border-right: 0px solid transparent;
@@ -1856,8 +2056,8 @@ destination-picker .sbsb_c:hover {
 }
 
 .gws-travel-calendar__month {
-    background-color: var(--modal-bg-color) !important;
-    background: var(--modal-bg-color) !important;
+    background-color: var(--modal2-bg-color) !important;
+    background: var(--modal2-bg-color) !important;
 }
 .tj3PF {
     border: unset !important;
@@ -1870,6 +2070,7 @@ destination-picker .sbsb_c:hover {
 .OGKy3c {
     border-right: 1px solid var(--silver-border-color) !important;
     border-left: 1px solid var(--silver-border-color) !important;
+    margin: 0 8px;
 }
 
 .gws-travel-calendar__day.gws-travel-calendar__disabled {
@@ -1958,7 +2159,9 @@ destination-picker .sbsb_c:hover {
     color: var(--white-bold) !important;
 }
 
-.sbsb_c,
+.sbsb_c {
+    color: var(--white-bold) !important;
+}
 .gstl_50 .sbdd_a {
     color: var(--white-average) !important;
 }
@@ -2292,24 +2495,41 @@ span.rllt__wrapped > span {
     cursor: pointer;
 }
 
-/* Dictionar result Pills */
-.MR2UAc {
-    background-color: var(--modal-bg-onHover-color) !important;
+/* Dictionary result Pills */
+.MR2UAc, 
+/* Image search pill */
+.Mw2I7 {
+    background-color: var(--modal-pill-color) !important;
     color: var(--white-average) !important;
     border: none !important;
 }
 
 .I6a0ee:hover,
-.MR2UAc:hover {
-    background-color: var(--main-bg-color) !important;
+.MR2UAc:hover,
+/* Image search pill */
+.Mw2I7:hover {
+    background-color: var(--modal-pill-onHover-color) !important;
     border: none !important;
+}
+.F9PbJd {
+    background-color: var(--modal2-bg-color) !important;
+    color: var(--white-average) !important;
+    border: none !important;
+}
+.F9PbJd:hover {
+    background-color: var(--modal2-bg-onHover-color) !important;
+    border: none !important;
+}
+
+.hIOe2 {
+    color: var(--white-average) !important;
 }
 
 /* Disabled pills*/
 .cO53qb {
-    background-color: var(--modal-bg-color) !important;
+    background-color: var(--main-bg-color) !important;
     color: var(--white-disabled) !important;
-    border: none !important;
+    border: 1px solid var(--silver-border-color) !important;
 }
 
 /* Dictionary translate drop down */
@@ -2357,20 +2577,24 @@ span.rllt__wrapped > span {
 .gb_l .gb_lb {
     background: var(--modal-bg-color) !important;
 }
+.gb_mb.gb_8f.gb_hb.gb_dg {
+    background: var(--modal2-bg-color) !important;
+}
 .gb_mb {
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
         0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
 }
-.gb_mb:hover {
-    background-color: var(--modal-bg-onHover-color) !important;
+.gb_mb:hover,
+.gb_mb.gb_8f.gb_hb.gb_dg:hover {
+    background-color: var(--modal2-bg-onHover-color) !important;
 }
 
 .gb_mb:hover > svg.gb_nb {
     fill: currentColor;
 }
 .gb_mb > svg.gb_nb {
-    color: var(--white-average) !important;
+    color: var(--soft-blue-text) !important;
     fill: currentColor;
 }
 /* Name */
@@ -2378,13 +2602,22 @@ span.rllt__wrapped > span {
 .gb_3b {
     color: var(--white-bold) !important;
 }
+/* email */
+.gb_5b,
+.gb_l .gb_qb {
+    color: var(--white-disabled) !important;
+}
+
 /* Big buttons */
 .gb_ub.gb_ub,
-.gb_Fb:hover,
 .gb_Fb.gb_Fb,
 .gb_Hb.gb_Hb {
-    background-color: var(--main-bg-color) !important;
+    background-color: var(--modal2-bg-color) !important;
     border: none !important;
+}
+.gb_Fb:hover,
+.gb_ub:hover {
+    background-color: var(--modal2-bg-onHover-color) !important;
 }
 
 /* Add account button*/
@@ -2401,4 +2634,146 @@ span.rllt__wrapped > span {
 .gb_Eb {
     border-top: none !important;
     border-bottom: none !important;
+}
+
+/* PDF tag */
+.sFZIhb {
+    background-color: var(--soft-red-text) !important;
+    color: var(--white-bold) !important;
+    border-color: transparent !important;
+}
+
+/* Image search */
+.cEPPT {
+    border-bottom: solid 1px transparent !important;
+    margin-bottom: 11px;
+}
+
+.ndYZfc {
+    padding: 0;
+    position: relative;
+    z-index: 102;
+    background: var(--main-bg-color) !important;
+    margin: unset;
+    min-width: unset;
+}
+.jZWadf {
+    position: relative;
+    white-space: nowrap;
+    align-items: baseline;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-width: 832px;
+}
+
+.NZmxZe:hover,
+a.NZmxZe,
+.PNyWAd.w6lkhd,
+.PNyWAd.ZXJQ7c {
+    color: var(--white-bold) !important;
+}
+
+.KQsPse,
+.LEv8df,
+.ssfWCe {
+    padding: unset !important;
+    margin-top: unset !important;
+}
+
+/* Make logo white */
+.fSnalc,
+.ZqPjbb,
+.oOg6Ne,
+.fSnalc,
+.aPiskd,
+.ZqPjbb {
+    stroke: #ffffff !important;
+}
+
+/* Camera in search bar */
+.F7UV7d {
+    background: unset !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235f6368' width='24px' height='24px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Ccircle cx='12' cy='12' r='3'/%3E%3Cpath d='M20 4h-3.17l-1.24-1.35c-.37-.41-.91-.65-1.47-.65H9.88c-.56 0-1.1.24-1.48.65L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 13c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z'/%3E%3C/svg%3E") !important;
+}
+/* Collections Icon*/
+.KA8Jyb {
+    fill: var(--svg-color) !important;
+}
+
+/* Left and right buttons*/
+.cEW58 {
+    background-color: var(--modal3-bg-color) !important;
+}
+.cEW58:hover {
+    background-color: var(--modal3-bg-onHover-color) !important;
+}
+
+div.cEW58.pQ1qie svg,
+div.cEW58.khjlM svg {
+    fill: white;
+}
+.FoDaAb {
+    padding: 10px 20px 10px !important;
+}
+
+.MSM1fd:hover {
+    background-color: var(--modal-bg-onHover-color) !important;
+    border-radius: 5px;
+}
+
+.YcWSDf {
+    background-color: var(--modal2-bg-color) !important;
+    border-color: var(--silver-border-light-color) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+}
+
+.sMi44c:hover .WGvvNb {
+    text-decoration: unset !important;
+}
+
+/* Search bar search icons*/
+.GAF4Ab,
+.wFncld {
+    color: var(--svg-color) !important;
+}
+
+.sb43,
+.AQxKeb {
+    background: unset !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235f6368' width='18px' height='18px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E") !important;
+}
+
+.h312td {
+    background: #ff0000 !important;
+    color: white !important;
+}
+.I1wio {
+    fill: #fff;
+}
+
+.UwAaac:hover {
+    background-color: var(--main-bg-onHover-color) !important;
+    text-decoration: unset !important;
+}
+
+/* Knowledge panel ratings*/
+.uVGhGc {
+    overflow: hidden;
+}
+
+.KZmu8e {
+    padding-top: 15px !important;
+    border: unset !important;
+}
+
+.CNf3nf {
+    border: 1px solid transparent !important;
+}
+
+.PUDfGe.z1asCe.kKuqUd {
+    color: var(--white-average) !important;
+}
+.GhTN2e {
+    padding-bottom: 10px !important;
 }

@@ -1,8 +1,11 @@
 /* 
-Styles from 'Google Dark'
-https://userstyles.org/styles/144028/google-clean-dark
+  Styles from 'Google Dark'
+  https://userstyles.org/styles/144028/google-clean-dark
+  (Heavily Modded)
+  CSS Code 2
 
-(Heavily Modded)
+  URL's matching:
+  https://(www|books|encrypted|accounts|translate).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})?/(?!maps|doodles|advanced|history|preferences|intl|services|work|wallet|fonts|travel/hotels|travel/packages).*
 */
 
 /** Notifications **/
@@ -321,13 +324,14 @@ div.EETcFd {
 .cJzOGc,
 .cJzOGc.Fuybue:visited,
 .wqg8ad {
-    color: #3d9970 !important;
+    color: var(--soft-green-text) !important;
 }
-._hJs {
+._hJs,
+.HgetDe {
     color: var(--white-caption) !important;
 }
 .gG0TJc {
-    color: var(--white-caption) !important;
+    color: var(--white-average) !important;
 }
 /*** Side information ***/
 ._pk,
@@ -2164,7 +2168,8 @@ body.displaying-history-page .history-page,
     border-top: 1px solid #333 !important;
 }
 /* Feed */
-g-inner-card {
+g-inner-card,
+.KZmu8e {
     background-color: var(--modal-bg-color) !important;
     border-color: transparent !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
@@ -2309,7 +2314,7 @@ g-inner-card {
     border-top: 1px solid rgba(223, 225, 229, 0.15) !important;
 }
 .bm7Wje {
-    background-color: var(--modal-bg-color) !important;
+    background-color: var(--main-bg-color) !important;
 }
 .z4Fov {
     color: var(--white-caption) !important;
@@ -3063,10 +3068,7 @@ a.scCTtb div {
 #rg_s > div > a {
     background-color: transparent !important;
 }
-.Mw2I7 {
-    background-color: #333 !important;
-    border-color: var(--dark-border-color) !important;
-}
+
 .Mw2I7.LPW6zd {
     background-color: #555 !important;
 }
