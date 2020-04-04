@@ -32,11 +32,20 @@
     --dark-border-color: #333333;
     --darker-border-color: #1b1b1b;
     --soft-red-text: #e9696b;
+    --hard-red-text: #d24040;
     --soft-green-text: #3d9970;
     --light-blue-hover: #e8f0fe;
     --rounded-pill-radius: 20px;
     --svg-color: #5f6368;
     --svg2-color: #9aa0a6;
+    --box-shadow-tiny: 0 1px 1px rgba(0, 0, 0, 0.3),
+        0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --box-shadow-small: 0 1px 2px rgba(0, 0, 0, 0.3),
+        0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --box-shadow-broad: 0 1px 3px rgba(0, 0, 0, 0.3),
+        0 4px 8px 3px rgba(0, 0, 0, 0.15);
+    --white-to-main-filter: invert(100%) invert(0%) sepia(10%) saturate(100%)
+        hue-rotate(180deg) brightness(105%) contrast(75%);
 }
 
 /* 
@@ -121,7 +130,7 @@ a.f9UGee,
 .mxKLHPdhMgZ__outer-bubble::before,
 .mxKLHPdhMgZ__outer-bubble .mxKLHPdhMgZ__inner-bubble {
     background-color: var(--modal-bg-onHover-color) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-broad) !important;
 }
 
 /* Dark Modal On Hover Background */
@@ -265,15 +274,16 @@ a.NnEw9.Z24yNd,
 .gws-flights__modal-dialog,
 /* Flight Date Picker. Hovered Date*/
 .gws-travel-calendar__day:not(.gws-travel-calendar__disabled):hover::after {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-small) !important;
 }
+
 /* Some flight stuff */
 .gws-flights-widgets-expandablecard__elevation-1,
 .gws-flights-widgets-expandablecard__elevation-1
     .gws-flights-widgets-expandablecard__back-bottom::before, .P1WQH, .EkeHle,
 /* Shopping items */
 .sh-dlr__list-result {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-small) !important;
 }
 
 .gws-flights-widgets-expandablecard__elevation-1.gws-flights-widgets-expandablecard__transition
@@ -461,14 +471,18 @@ html,
  /* Shopping */
  .E5ocAb,
  /* Flight header */
- .gws-flights__header-image-text, .BgYkof {
+ .gws-flights__header-image-text, .BgYkof,
+ .vRHqb,
+ .rKFBM .HnYYW {
     color: var(--white-bold) !important;
 }
 
 /* White Bold-Average Texts */
 /* Search result content */
 .s,
-.ktf {
+.ktf,
+.R7GtFd,
+.wLd6Ld {
     color: rgba(255, 255, 255, 0.8) !important;
 }
 
@@ -493,7 +507,8 @@ html,
 /* Flights search */
 .gws-flights-dialog__destination-details,
 /* Song lyric source */
-.j04ED {
+.j04ED,
+.pDZ61d {
     color: var(--white-average) !important;
 }
 
@@ -587,7 +602,7 @@ From "Google - Clean Dark"
     color: #e8e8e8 !important;
 }
 
-/* Flat Buttons */
+/* Modal Flat Buttons */
 /* Google Accounts Menu Add and Sign Out */
 .gb_sb .gb_tb,
 /* TODO Can't remeber what this was */
@@ -605,6 +620,20 @@ From "Google - Clean Dark"
     box-shadow: unset !important;
 }
 
+/* Modal Flat buttons on Hover*/
+/* Google Home page search buttons */
+.jhp input[type="submit"]:hover, .sbdd_a input:hover, .gbqfba:hover,
+/* TODO Can't remeber what this was */
+.ab_button:hover,
+/* Google Accounts Menu Add and Sign Out */
+.gb_sb .gb_tb:hover,
+/*flight confirm*/
+.Tvmvt.PHEte:hover {
+    background: var(--modal-bg-onHover-color) !important;
+    cursor: pointer !important;
+}
+
+/* Main Flat Buttons */
 /* Search taskbar items*/
 #hdtb .hdtb-mitem a,
 #hdtb-msb #hdtb-more,
@@ -619,14 +648,8 @@ From "Google - Clean Dark"
 }
 
 /* Flat Buttons On Hover */
-/* Google Accounts Menu Add and Sign Out */
-.gb_sb .gb_tb:hover,
-/* TODO Can't remeber what this was */
-.ab_button:hover,
 /* Flight explore button */
 .RQn3j:hover,
-/* Google Home page search buttons */
-.jhp input[type="submit"]:hover, .sbdd_a input:hover, .gbqfba:hover,
 /* Google homepage tips buttons */
 .gb_1.gb_nd:hover,
 /* Search taskbar items on hover*/
@@ -636,8 +659,6 @@ From "Google - Clean Dark"
 #hdtb-msb #hdtb-tls:hover,
 /* Selected Search taskbar tab*/
 #hdtb-msb .hdtb-mitem.hdtb-msel:hover,
-/*flight confirm*/
-.Tvmvt.PHEte:hover,
 /* Image search */
 .NZmxZe:hover, .PNyWAd.w6lkhd:hover, .PNyWAd.ZXJQ7c:hover {
     background: var(--main-bg-onHover-color) !important;
@@ -1534,7 +1555,7 @@ img.KJ3c0b.M5mFPb {
 }
 .mSPnZKpnf91__menu {
     background-color: var(--modal3-bg-color) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-small) !important;
 }
 .mSPnZKpnf91__menu-item:hover {
     background-color: var(--modal3-bg-onHover-color) !important;
@@ -1600,8 +1621,7 @@ img.KJ3c0b.M5mFPb {
 .StYgtd,
 .soKt7b,
 .gws-flights__hero-header {
-    filter: invert(100%) invert(0%) sepia(10%) saturate(100%) hue-rotate(180deg)
-        brightness(105%) contrast(75%) !important;
+    filter: var(--white-to-main-filter) !important;
 }
 .FBsWCd,
 .gws-flights__header-image-text-container {
@@ -1611,7 +1631,7 @@ img.KJ3c0b.M5mFPb {
 .t50xE {
     background-image: unset !important;
     background-color: var(--modal-bg-color) !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-small) !important;
 }
 
 .ksBjEc:not(:disabled) {
@@ -1707,7 +1727,7 @@ div.gws-flights-widgets-callout__arrow.gws-flights-widgets-callout__arrow-fg.exp
 .Ps3GYc {
     background-color: var(--modal-bg-color) !important;
     border: unset !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-small) !important;
 }
 .MtZfLb {
     color: var(--white-bold) !important;
@@ -2581,9 +2601,8 @@ span.rllt__wrapped > span {
     background: var(--modal2-bg-color) !important;
 }
 .gb_mb {
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
-        0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15) !important;
+    -webkit-box-shadow: var(--box-shadow-tiny) !important;
+    box-shadow: var(--box-shadow-tiny) !important;
 }
 .gb_mb:hover,
 .gb_mb.gb_8f.gb_hb.gb_dg:hover {
@@ -2725,7 +2744,7 @@ div.cEW58.khjlM svg {
 .YcWSDf {
     background-color: var(--modal2-bg-color) !important;
     border-color: var(--silver-border-light-color) !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-small) !important;
 }
 
 .sMi44c:hover .WGvvNb {
@@ -2776,4 +2795,146 @@ div.cEW58.khjlM svg {
 }
 .GhTN2e {
     padding-bottom: 10px !important;
+}
+
+/* Pandemic information */
+.FqnKTc {
+    border-left: 1px solid var(--silver-border-color) !important;
+}
+.Jb0Zif .t7sryb {
+    border-bottom: 1px solid var(--silver-border-color) !important;
+}
+.bp024d {
+    color: var(--white-disabled) !important;
+}
+
+.kPLAje {
+    background-color: var(--main-bg-color) !important;
+    border-top: 1px solid var(--silver-border-color) !important;
+    color: var(--white-disabled);
+}
+
+.lGvmZc,
+.veys4e {
+    border-top: 1px solid var(--silver-border-color) !important;
+}
+
+.vnLNtd.mnr-c {
+    background-color: var(--modal-bg-color) !important;
+    border: 1px solid transparent !important;
+    color: var(--white-average) !important;
+    box-shadow: var(--box-shadow-small) !important;
+}
+/* Pandemic Knwoledge Panel */
+#rhs.rhs-osrp .xVtsMb {
+    border: 1px solid transparent !important;
+}
+#rhs.rhs-osrp .rKFBM {
+    display: none !important;
+}
+.vnLNtd.mnr-c.B03h3d.V14nKc.ptcLIOszQJu__wholepage-card.wp-ms {
+    margin-top: 5px !important;
+}
+.lC4QN {
+    color: inherit !important;
+}
+#rcnt a:hover {
+    text-decoration: none !important;
+}
+.Y37F6d.Nn2Stf img {
+    margin-top: 15px !important;
+}
+.kCsJmb .cb2Ef {
+    background-color: var(--modal-bg-color) !important;
+}
+.kCsJmb .cb2Ef .Rpw0Qe {
+    border-bottom: 1px solid transparent !important;
+    box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.8) !important;
+}
+.H9Ebud .sTlZ4e {
+    border-top: 1px solid var(--silver-border-color) !important;
+}
+
+.i3yuNc,
+.sTlZ4e {
+    border-top: 1px solid transparent !important;
+}
+
+.GbrHke img,
+.fTE6nf {
+    border-radius: 50% !important;
+}
+.vfaQvf .sTlZ4e .LiHxzc .GbrHke img {
+    filter: invert(100%) invert(40%) sepia(7%) saturate(345%) hue-rotate(173deg)
+        brightness(93%) contrast(91%) !important;
+}
+
+/* Pandemic flat buttons */
+.KRQ2Ab {
+    background: var(--main-bg-color) !important;
+    background-color: var(--main-bg-color) !important;
+    border: 1px solid transparent !important;
+    color: var(--white-bold) !important;
+}
+/* Pandemic flat buttons */
+.KRQ2Ab:hover {
+    background: var(--modal-bg-onHover-color) !important;
+    cursor: pointer !important;
+}
+
+.JXRj4e,
+.NOK5hf,
+.c0L1fd {
+    color: var(--white-average) !important;
+}
+.nrXPnc,
+.Uw4age {
+    color: var(--white-disabled) !important;
+}
+
+.HRfe0e,
+.mtnwac {
+    color: var(--soft-blue-text) !important;
+}
+/* Side banner */
+.fLJSwc {
+    filter: var(--white-to-main-filter) !important;
+}
+
+/* Unselected options */
+.iFBpgc .LfE12c .MjJo9 {
+    color: var(--white-caption) !important;
+}
+.iFBpgc .LfE12c.iqv4K .MjJo9 {
+    background-color: var(--hard-red-text) !important;
+    color: var(--white-bold) !important;
+}
+.xEaFBe {
+    color: var(--white-bold) !important;
+}
+.m0RhYb,
+.lBbtTb,
+.vp45yf,
+.lZC9wd {
+    color: var(--svg-color) !important;
+}
+.iFBpgc .LfE12c:not(.iqv4K):hover .MjJo9 {
+    background: var(--main-bg-onHover-color) !important;
+}
+
+/* Share Modal */
+.NJfJb {
+    background-color: var(--modal2-bg-color) !important;
+}
+.aNrSe,
+.DQc04b,
+.tW0dvd {
+    color: var(--white-bold) !important;
+}
+.ydMLRd {
+    color: var(--white-disabled) !important;
+}
+
+.K56Jue .kp85vc {
+    border-bottom: unset !important;
 }

@@ -2172,7 +2172,7 @@ g-inner-card,
 .KZmu8e {
     background-color: var(--modal-bg-color) !important;
     border-color: transparent !important;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15) !important;
+    box-shadow: var(--box-shadow-small) !important;
 }
 /* Places */
 ._xe {
