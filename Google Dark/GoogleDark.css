@@ -44,8 +44,8 @@
         0 1px 3px 1px rgba(0, 0, 0, 0.15);
     --box-shadow-broad: 0 1px 3px rgba(0, 0, 0, 0.3),
         0 4px 8px 3px rgba(0, 0, 0, 0.15);
-    --white-to-main-filter: invert(100%) invert(0%) sepia(10%) saturate(100%)
-        hue-rotate(180deg) brightness(105%) contrast(75%);
+    --white-to-main-filter-blue-tint: invert(100%) invert(0%) sepia(10%)
+        saturate(100%) hue-rotate(180deg) brightness(105%) contrast(75%);
 }
 
 /* 
@@ -1621,7 +1621,7 @@ img.KJ3c0b.M5mFPb {
 .StYgtd,
 .soKt7b,
 .gws-flights__hero-header {
-    filter: var(--white-to-main-filter) !important;
+    filter: var(--white-to-main-filter-blue-tint) !important;
 }
 .FBsWCd,
 .gws-flights__header-image-text-container {
@@ -2895,7 +2895,7 @@ div.cEW58.khjlM svg {
 }
 /* Side banner */
 .fLJSwc {
-    filter: var(--white-to-main-filter) !important;
+    filter: var(--white-to-main-filter-blue-tint) !important;
 }
 
 /* Unselected options */
@@ -2934,4 +2934,13 @@ div.cEW58.khjlM svg {
 
 .K56Jue .kp85vc {
     border-bottom: unset !important;
+}
+
+/* Red squiggly line fix */
+.pR49Ae span {
+    background: url(/images/experiments/wavy-underline.png) repeat-x scroll 0
+        100% white !important;
+    filter: invert(100%) invert(0%) sepia(10%) saturate(70%) hue-rotate(900deg)
+        brightness(150%) contrast(85%) !important;
+    color: var(--dark-input-bg) !important;
 }
