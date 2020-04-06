@@ -2944,3 +2944,10 @@ div.cEW58.khjlM svg {
         brightness(150%) contrast(85%) !important;
     color: var(--dark-input-bg) !important;
 }
+
+g-card {
+    background-color: var(--main-bg-color) !important;
+}
+.G0nQ7b {
+    color: var(--soft-red-text) !important;
+}
