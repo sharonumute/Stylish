@@ -6,22 +6,22 @@
 */
 
 :root {
-    --dark-input-bg: #121212;
+    --dark-input-bg: #000000;
     --dark-pit-modal: #1e1e1e;
-    --main-bg-color: #202020;
-    --main-bg-onHover-color: #272727;
-    --modal-bg-color: #272727;
-    --modal-bg-onHover-color: #2e2e2e;
-    --modal2-bg-color: #2e2e2e;
-    --modal2-bg-onHover-color: #333333;
-    --modal-pill-color: #303030;
-    --modal-pill-onHover-color: #393939;
-    --modal3-bg-color: #404040;
-    --modal3-bg-onHover-color: #494949;
+    --main-bg-color: #121212;
+    --main-bg-onHover-color: #1e1e1e;
+    --modal-bg-color: #1b1b1b;
+    --modal-bg-onHover-color: #252525;
+    --modal2-bg-color: #262626;
+    --modal2-bg-onHover-color: #2d2d2d;
+    --modal-pill-color: #2f2f2f;
+    --modal-pill-onHover-color: #333333;
+    --modal3-bg-color: #353535;
+    --modal3-bg-onHover-color: #383838;
     --black-modal: #111;
     --white-bold: rgba(255, 255, 255, 0.87);
-    --white-average: rgba(255, 255, 255, 0.6);
-    --white-caption: rgba(255, 255, 255, 0.38);
+    --white-average: #cccccc;
+    --white-caption: #666;
     --white-disabled: #5f6368;
     --visited-text: #aea0d1;
     --soft-blue-text: #99badd;

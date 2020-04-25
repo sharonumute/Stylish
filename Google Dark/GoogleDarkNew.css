@@ -1,0 +1,662 @@
+:root {
+    /* Dark Surfaces and Modals */
+    --surface-bg-color: #121212;
+    --surface-bg-onHover-color: #1e1e1e;
+    --surface-bg-dip-color: #000000;
+    /* Elevation 1 */
+    --modal-1-bg-color: #1b1b1b;
+    --modal-1-bg-onHover-color: #252525;
+    --modal-1-bg-dip-color: #121212;
+    /* Elevation 2 */
+    --modal-2-bg-color: #262626;
+    --modal-2-bg-onHover-color: #2d2d2d;
+    --modal-2-bg-dip-color: #222222;
+    /* Elevation 3 */
+    --modal-3-bg-color: #2f2f2f;
+    --modal-3-bg-onHover-color: #333333;
+    --modal-3-bg-dip-color: #272727;
+    /* Elevation 4 */
+    --modal-4-bg-color: #353535;
+    --modal-4-bg-onHover-color: #383838;
+    --modal-4-bg-dip-color: #2e2e2e;
+    /* Specific elements*/
+    --dark-input-color: #000000;
+    /* Accent colors */
+    --white-bold: #cccccc;
+    --white-average: #c2c2c2;
+    --white-caption: #979da3;
+    --white-disabled: #70757a;
+    --soft-purple: #aea0d1;
+    --soft-blue: #88a7c7;
+    --soft-red: #e9696b;
+    --soft-green: #3d9970;
+    --grey-svg-color: #5f6368;
+    --blue-svg-color: #4285f4;
+    /* Border and shadows */
+    --silver-border-color: rgba(223, 225, 229, 0.1);
+    --silver-border: 1px solid var(--silver-border-color);
+    --rounded-pill-radius: 20px;
+    --box-shadow-tiny: 0 1px 1px rgba(0, 0, 0, 0.3),
+        0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --box-shadow-average: 0 1px 2px rgba(0, 0, 0, 0.3),
+        0 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --box-shadow-broad: 0 1px 3px rgba(0, 0, 0, 0.3),
+        0 4px 8px 3px rgba(0, 0, 0, 0.15);
+    --white-to-main-filter-blue-tint: invert(100%) invert(0%) sepia(10%)
+        saturate(100%) hue-rotate(180deg) brightness(105%) contrast(75%);
+}
+
+/* Root text color alterations */
+a:visited {
+    color: var(--soft-purple) !important;
+}
+
+a:link,
+.q:active,
+.q:visited {
+    color: var(--soft-blue) !important;
+}
+
+.a,
+cite,
+cite a:link,
+cite a:visited,
+.cite,
+.cite:link,
+#nygTcd > i,
+.bc a:link {
+    color: var(--soft-green) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* General text colors */
+
+/* Bold texts */
+h3[role=heading],
+/* Info card title text */
+.Ss2Faf,
+.w8qArf .fl,
+.rl_item_base .title,
+/* Result feed titles */
+.cJzOGc,
+/* Top stories title */
+.wqg8ad,
+/* People also searched for */
+.JolIg,
+/* Bold parts of search result texts */
+.s .st em, .st.s.std em,
+/* Search result titles */
+b,
+/* Card titles */
+.eLpAgf, .garHBe, .cwUqwd, .w8qArf a.fl:link,.zCubwf,
+/* Footer logo number selected */
+#foot .AaVjTc .YyVfkd,
+.eJ7tvc {
+    color: var(--white-bold) !important;
+}
+
+/* Average texts */
+/* Info card external sources */
+.Eegi6c,
+/* Info card texts */
+.uDMnUc, .xtObwd, .GrfNd, .ooYbic, .oIcuye, .yxsAke,.y8Jpof .LrzXr,
+/* Search result texts */
+.s, .P1usbc, .tKfMXd,
+/* Footer */
+.b0KoTc, #Wprf1b, .smiUbb,
+/* Card texts */
+.oNwCmf .Qk80Jf {
+    color: var(--white-average) !important;
+}
+
+/* Caption texts */
+/* Info card link captions */
+.eipWBe,
+.auw0zb,
+.j04ED,
+.P7Vl4c .RCBpod,
+.xlBGCb,
+.FGlSad,
+.kX21rb,
+.xjvFRe,
+.ayRjaf,
+.n1Mpqb,
+/* Feedback button */
+.duf3, .zECGdd,
+.f, .f a:link {
+    color: var(--white-caption) !important;
+}
+
+/* Disabled texts */
+/* Search results info */
+#result-stats,
+/* Related searches */
+.oaSpFd {
+    color: var(--white-disabled) !important;
+}
+
+/* Blue link texts */
+.SW5pqf,
+.xXEKkb,
+.k4DMHe .xXEKkb,
+.ErlEM .P7Vl4c .RCBpod,
+a.fl,
+/* View more on hover */
+a.EbH0bb {
+    color: var(--soft-blue) !important;
+}
+
+/*******************************************************************************************************************************************/
+
+/* Main dark surfaces */
+/* Main Page of Google */
+body,
+html,
+/* Footer */
+#fbar,
+/* The Mini top Search Bar on top when scrolled */
+.minidiv .sfbg,
+/* "All, News, Images" Task Bar Background*/
+#hdtbSum,
+/* Top appbar */
+#appbar,
+/*Search Page*/
+.sfbgg, .sfbgx,
+/* Image search */
+.jZWadf,
+/* Google flights results */
+.gws-flights-results__results
+/* Google flight result pills */,
+.ksYYHb::before, .ksYYHb::after,
+/*prices are currently high*/
+.KTe3od .gws-flights-widgets-expandablecard__body, .KTe3od .gws-flights-widgets-expandablecard__back-top,
+/* Explore flights */
+.UK6Qid {
+    background: var(--surface-bg-color) !important;
+    color: var(--white-average) !important;
+}
+
+/*******************************************************************************************************************************************/
+
+/* Input Bars/Search bars */
+input,
+/* Input Bar decorations */
+/* Search Bar and Suggestions */
+.sbib_a,
+.sbsb_a,
+.RNNXgb,
+.aajZCb,
+.sbibod,
+.BncaVb,
+/* Image search bar */
+.zthhpf,
+.lV0vqc {
+    background: var(--dark-input-color) !important;
+    color: var(--white-bold) !important;
+    border-color: transparent !important;
+    box-shadow: unset !important;
+}
+input::placeholder {
+    color: var(--white-caption) !important;
+}
+/* Search suggestion items */
+.sbl1,
+.sbl1 span,
+.sbl1 span b {
+    color: var(--white-bold) !important;
+    font-weight: 100 !important;
+}
+/* Search suggestion items on hover */
+.sbhl {
+    background: rgb(225, 225, 225, 0.05) !important;
+    cursor: pointer;
+}
+
+/* Misspelling red error line fix */
+/* Main search bar */
+.pR49Ae span {
+    background: url(/images/experiments/wavy-underline.png) repeat-x scroll 0
+        100% white !important;
+    filter: invert(100%) invert(0%) sepia(10%) saturate(70%) hue-rotate(900deg)
+        brightness(150%) contrast(85%) !important;
+    color: var(--dark-input-color) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Main Search page task bar */
+
+/* Search taskbar bar*/
+body.vasq #hdtbSum, 
+/* Image Search */
+.jZWadf {
+    height: 51px !important;
+}
+
+/* Selected Search taskbar tab button */
+#hdtb-msb .hdtb-mitem.hdtb-msel,
+span.rQEFy.NZmxZe {
+    border-bottom: 3px solid var(--blue-svg-color) !important;
+    color: var(--blue-svg-color) !important;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* taskbar bottom divider */
+#hdtb,
+#hdtb.hdtba #hdtbMenus {
+    border-bottom: 1px solid var(--surface-bg-color) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Silver dividers and borders */
+
+/* Main search bar */
+.FqnKTc,
+/* Footer, */
+#swml {
+    border-left: var(--silver-border) !important;
+}
+/* Search suggestions divider */
+.xtSCL,
+/* Information card sub dividers */
+.scrt tr:first-child td,
+/* Top stories dividers */
+.EPLo7b,
+/* People also searched for */
+.cbphWd,
+/* Related Searches */
+.brs_col .IWTYQ {
+    border-top: var(--silver-border) !important;
+}
+/* Information card sub dividers */
+.scrt td {
+    border-bottom: var(--silver-border) !important;
+}
+
+/* Main page footer */
+.b2hzT {
+    border-bottom: var(--surface-bg-color) !important;
+}
+
+/* Invisible borders */
+/* Footer */
+#fbar {
+    border-top: var(--surface-bg-color) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Icons and svgs */
+
+/* Grey svgs */
+/* Main search bar 'x' */
+.lBbtTb,
+/* Search bar 'search' icon */
+.wFncld,
+/* Various card dropdowns */
+.vp45yf,
+/* Related searches search svg */
+.brs_col .search-icon,
+/* More info svg */
+.EZRelc.z1asCe.lYxQe,
+/* Bookmark button from job board (unsaved) */
+.NOiGgb .sb-unsaved svg {
+    color: var(--grey-svg-color) !important;
+    fill: var(--grey-svg-color) !important;
+}
+/* Same idea but image based */
+.sb43,
+.AQxKeb {
+    background: unset !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235f6368' width='18px' height='18px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3C/svg%3E") !important;
+}
+
+/* Blue svgs */
+/* Bookmark button from job board (saved) */
+.NOiGgb .sb-saved svg {
+    color: var(--blue-svg-color) !important;
+    fill: var(--blue-svg-color) !important;
+}
+
+/* Tiny search link chevron */
+.action-menu .mn-dwn-arw {
+    border-color: var(--grey-svg-color) transparent !important;
+}
+
+/* Texts to match svg */
+/* Related searches */
+.brs_col b,
+#brs a,
+/* More info text */
+.wUrVib, .EZRelc {
+    color: var(--white-average) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Buttons and pills */
+
+/* Surface Flat Buttons */
+/* Search taskbar items*/
+#hdtb .hdtb-mitem a,
+#hdtb-msb #hdtb-more,
+#hdtb-msb #hdtb-tls,
+.F7IIOc,
+/* Image search */
+.NZmxZe, .PNyWAd.w6lkhd, .PNyWAd.ZXJQ7c {
+    background: var(--surface-bg-color) !important;
+    background-color: var(--surface-bg-color) !important;
+    border: 1px solid transparent !important;
+    color: var(--white-bold) !important;
+    box-shadow: unset !important;
+}
+
+/* Surface Flat Buttons On Hover */
+/* Flight explore button */
+.RQn3j:hover,
+/* Google homepage tips buttons */
+.gb_1.gb_nd:hover,
+/* Search taskbar items on hover*/
+#hdtb-more-mn a:hover, #hdtb .hdtb-mitem a:hover, 
+.hdtb-mn-hd:hover, #hdtb-more:hover, 
+/* Selected Search taskbar tools button*/
+#hdtb-msb #hdtb-tls:hover,
+/* Selected Search taskbar tab*/
+#hdtb-msb .hdtb-mitem.hdtb-msel:hover,
+/* Image search */
+.NZmxZe:hover, .PNyWAd.w6lkhd:hover, .PNyWAd.ZXJQ7c:hover {
+    background: var(--surface-bg-onHover-color) !important;
+    cursor: pointer !important;
+}
+
+/* Rounded Surface flat buttons */
+.hdtb-mitem.hdtb-msel,
+.hdtb-mitem a,
+#hdtb-msb #hdtb-tls,
+/* Image search */
+.NZmxZe, .PNyWAd.w6lkhd, .PNyWAd.ZXJQ7c {
+    padding: 10px !important;
+    border-radius: var(--rounded-pill-radius);
+}
+
+/* Result feed, scroll left & right button */
+.BlOseb.eSq3C g-fab,
+.k2Oeod.eSq3C g-fab {
+    background-color: var(--modal-4-bg-color) !important;
+    box-shadow: var(--box-shadow-average) !important;
+}
+.CNf3nf {
+    border: 0px solid var(--silver-border-color) !important;
+}
+.Lu0opc.eSq3C:hover g-fab {
+    color: #fff !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Modals Menus */
+
+/* Modal 1 Menus */
+/* Main page settings menu */
+.cF4V5c {
+    background-color: var(--modal-1-bg-color) !important;
+    background: var(--modal-1-bg-color) !important;
+    box-shadow: var(--box-shadow-broad) !important;
+    color: var(--white-bold) !important;
+    font-weight: 100 !important;
+    border: 1px solid transparent !important;
+}
+/* Modal 1 Menu items */
+a.f9UGee,
+a.f9UGee:visited {
+    background-color: var(--modal-1-bg-color) !important;
+    background: var(--modal-1-bg-color) !important;
+    color: var(--white-average) !important;
+    border: 1px solid transparent !important;
+}
+/* Modal 1 Menu items on hover */
+.f9UGee.AchQod {
+    background: var(--modal-1-bg-onHover-color) !important;
+    background-color: var(--modal-1-bg-onHover-color) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Modal Cards */
+
+/* Main search page cards */
+g-card,
+/* Feature Snippets, "Peaople Also Search For" and Knowledge Panel */
+.kp-blk,
+/* Top stories */
+.qmv19b,
+/* Result feed cards */
+g-inner-card,
+.KZmu8e {
+    background: var(--modal-1-bg-color) !important;
+    border: 0px solid transparent !important;
+    box-shadow: var(--box-shadow-average) !important;
+    border-radius: 8px;
+    color: var(--white-average) !important;
+}
+
+/* Result feed within card */
+.PZPZlf.MRfBrb.kno-vrt-t {
+    background-color: var(--modal-1-bg-color) !important;
+    border-color: transparent !important;
+    color: var(--white-average) !important;
+    border-radius: 4px !important;
+    margin-right: 10px !important;
+}
+
+/* Whole cards on hover */
+g-inner-card:hover,
+.KZmu8e:hover,
+.PZPZlf.MRfBrb.kno-vrt-t:hover {
+    background-color: var(--modal-1-bg-onHover-color) !important;
+}
+
+/* Result feed video decoration */
+.Rd246b {
+    background-color: var(--modal-4-bg-color) !important;
+}
+
+/* Card internal panels/parts */
+/* Main search page cards: Feature Snippets, "Peaople Also Search For" and Knowledge Panel */
+.vtnSJf,
+.rl_item_base,
+#rhs .y8Jpof.rhsvw,
+/* Job board */
+.iFjolb {
+    background: var(--modal-1-bg-color) !important;
+    color: var(--white-average) !important;
+    border: 0 solid var(--silver-border-color) !important;
+    box-shadow: unset !important;
+}
+/* Remove underline from items */
+.rl_item.bPrEDb:hover .title,
+#rcnt a:hover,
+#brs a:hover {
+    text-decoration: none !important;
+}
+
+/* on hover */
+.vtnSJf:hover,
+.rl_item_base:hover,
+#rcnt .rl_item:hover,
+#rhs .y8Jpof.rhsvw:hover,
+/* Job board */
+.iFjolb:hover {
+    background: var(--modal-1-bg-onHover-color) !important;
+    text-decoration: unset !important;
+    border-radius: inherit;
+    box-shadow: unset !important;
+}
+/* Information card invisible dividers */
+.kp-blk .xpdclose .farUxc,
+.kp-blk .xpdopen .mJ2Mod,
+.ErlEM {
+    border-top: 0px solid var(--modal-1-bg-color) !important;
+}
+.jhg04d {
+    border-bottom: 0px solid var(--modal-1-bg-color) !important;
+}
+
+/* "Other recordings" fix */
+.TO2KC .LwV4sf,
+.TO2KC .VQr16d,
+.TO2KC .fRmlm,
+.Y7yRdd .LwV4sf,
+.Y7yRdd .VQr16d,
+.Y7yRdd .fRmlm {
+    padding-left: 10px !important;
+}
+
+/* Feed in card, height fix */
+.zVvuGd.MRfBrb {
+    display: flex !important;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.kno-vrt-t.MRfBrb {
+    padding-left: 0px !important;
+}
+.kno-vrt-t.MRfBrb:first-child {
+    padding-left: 0px !important;
+}
+.kno-vrt-t a {
+    display: flex !important;
+    flex-flow: column !important;
+}
+.oBrLN,
+.xlBGCb {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-bottom: 5px !important;
+    width: inherit !important;
+}
+
+.oBrLN {
+    color: var(--white-bold) !important;
+}
+.xlBGCb {
+    color: var(--white-caption) !important;
+}
+
+/* Other card fixes */
+#rhs .Lj180d {
+    padding-bottom: 15px !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Image modifications */
+
+/* Music Information card: music source logo */
+.WTbp9e .thumb g-img .rISBZc.M4dUYb {
+    filter: invert(100%) invert(0%) sepia(0%) saturate(250%) hue-rotate(180deg)
+        brightness(100%) contrast(75%) !important;
+}
+
+/* Search link chevron icon */
+.GHDvEf,
+.GHDvEf:hover,
+.GHDvEf.selected,
+.GHDvEf.selected:hover {
+    background-color: transparent !important;
+}
+
+/* White 'x' icon on Bubbled Search results*/
+.XCKyNd {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z' fill='%235f6368'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+}
+
+/* White Chevron In scrollable suggestions for image search*/
+.BlOseb.SkGIjd .KkkQv,
+.k2Oeod.SkGIjd .S2C1T,
+.BlOseb.MFTKyf .KkkQv,
+.k2Oeod.MFTKyf .S2C1T {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+    height: 24px !important;
+    width: 24px !important;
+}
+/* Flipper for chevron */
+.BlOseb.MFTKyf .KkkQv {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: 'FlipH';
+    background-position: unset !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Feedback thing */
+/* Text */
+.kno-ftr {
+    color: var(--soft-blue) !important;
+    font-style: italic !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Google job board */
+.HaXvv {
+    border: 0px solid transparent !important;
+}
+.u8H8Fd {
+    box-shadow: unset !important;
+}
+.CcgH5c {
+    background-color: var(--modal-1-bg-color) !important;
+}
+
+/* Job logo's */
+.x1z8cb {
+    background: var(--modal-1-bg-color) !important;
+    border: unset !important;
+    border-radius: 50% !important;
+}
+.x1z8cb div,
+.eZUcuf img {
+    border-radius: 50% !important;
+}
+
+/* Dividers inbetween items */
+.lR4X6c {
+    border: 0 solid transparent !important;
+    border-top-width: 0px !important;
+}
+.VNvrbb {
+    border-top: var(--modal-1-bg-color) !important;
+}
+/* Toolbar with job search pills */
+.J7eW {
+    background: var(--modal-1-bg-color) !important;
+    border-bottom: unset !important;
+}
+
+/* Gradient left and right button */
+.k2Oeod.MFTKyf {
+    background: linear-gradient(
+        270deg,
+        var(--modal-1-bg-color) 55%,
+        rgba(0, 0, 0, 0.09)
+    ) !important;
+    right: 0;
+}
+.BlOseb.MFTKyf {
+    background: linear-gradient(
+        90deg,
+        var(--modal-1-bg-color) 55%,
+        rgba(0, 0, 0, 0.09)
+    ) !important;
+    left: 0;
+}
+
+/* Job search pills */
+.GbaVB,
+.GbaVB:not(.tl-pp-on) {
+    background-color: var(--modal-3-bg-color) !important;
+    border: unset !important;
+    color: var(--white-average) !important;
+}
+.GbaVB:hover {
+    background-color: var(--modal-3-bg-onHover-color) !important;
+    border: unset !important;
+    color: var(--white-average) !important;
+}
