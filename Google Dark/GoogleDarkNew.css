@@ -1,3 +1,12 @@
+/**
+Modded a bit from "Google - Clean Dark"
+https://userstyles.org/styles/144028/google-clean-dark
+
+Currently excludes
+Google Hotels
+Google Packages
+**/
+
 :root {
     /* Dark Surfaces and Modals */
     --surface-bg-color: #121212;
@@ -327,8 +336,6 @@ input::placeholder {
 /* Misspelling red error line fix */
 /* Main search bar */
 .pR49Ae span {
-    background: url(/images/experiments/wavy-underline.png) repeat-x scroll 0
-        100% white !important;
     filter: invert(100%) invert(0%) sepia(10%) saturate(70%) hue-rotate(900deg)
         brightness(150%) contrast(85%) !important;
     color: var(--dark-input-color) !important;
@@ -1413,9 +1420,6 @@ div.cEW58.khjlM svg {
 }
 .UwAaac {
     border-top: unset !important;
-    background: url(//www.google.com/images/icons/material/system/2x/keyboard_arrow_right_grey600_24dp.png)
-        right 8px center no-repeat !important;
-    background-size: 20px !important;
 }
 
 /*******************************************************************************************************************************************/
@@ -2102,8 +2106,7 @@ img[id^='lr_dct_img_origin'] {
 
 /* Dictionary translate drop down */
 .TVSh {
-    background: url(//ssl.gstatic.com/ui/v1/disclosure/grey-disclosure-arrow-up-down.png)
-        100% no-repeat var(--dark-input-color) !important;
+    background-color: var(--dark-input-color) !important;
     border-radius: 5px;
     color: var(--white-bold) !important;
 }
