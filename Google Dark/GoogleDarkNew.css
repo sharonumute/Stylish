@@ -29,7 +29,7 @@
     --white-disabled: #70757a;
     --soft-purple: #aea0d1;
     --soft-blue: #88a7c7;
-    --soft-red: #e9696b;
+    --soft-red: #bc4f4f;
     --soft-green: #3d9970;
     --grey-svg-color: #5f6368;
     --blue-svg-color: #4285f4;
@@ -160,8 +160,8 @@ cite a:visited,
 /* Bold texts */
 h3[role=heading],
 /* Info card title text */
-.Ss2Faf,
-.w8qArf .fl,
+.Ss2Faf,.kno-ecr-pt,
+.w8qArf .fl,.XiMyEd,
 .rl_item_base .title,
 /* Result feed titles */
 .cJzOGc,
@@ -177,7 +177,7 @@ b,#brs .med,
 .eLpAgf, .garHBe, .cwUqwd, .w8qArf a.fl:link,.zCubwf,.VQN8fd a, .VQN8fd h4,
 /* Footer logo number selected */
 #foot .AaVjTc .YyVfkd,
-.eJ7tvc, .PyJv1b, .jtEFhd .KYeOtb, .NprOob, .CCb0ac, .CCb0ac a {
+.eJ7tvc, .PyJv1b, .jtEFhd .KYeOtb, .NprOob, .CCb0ac, .CCb0ac a, .bTuXH.vk_sh.ellip, .vk_bk.vk_sh {
     color: var(--white-bold) !important;
 }
 
@@ -191,7 +191,7 @@ b,#brs .med,
 /* Footer */
 .b0KoTc, #Wprf1b, .smiUbb,
 /* Card texts */
-.oNwCmf .Qk80Jf, .knFDje, .qUjgX, .azqZUd, .iF8z4d td, .ML43Jb {
+.oNwCmf .Qk80Jf, .knFDje, .qUjgX, .azqZUd, .iF8z4d td, .ML43Jb,.vk_gy span {
     color: var(--white-average) !important;
 }
 
@@ -208,8 +208,8 @@ b,#brs .med,
 .ayRjaf,
 .n1Mpqb,
 /* Feedback button */
-.duf3, .zECGdd,
-.f, .f a:link, .p7n7Ze, .wx62f, .wfbQZb, .z4Fov {
+.duf3, .zECGdd,.RGBJ3b,
+.f, .f a:link, .p7n7Ze, .wx62f, .wfbQZb, .z4Fov, .OiIFo,  .MVG5H,  .or6iFb.vk_gy.Uekwlc.ellip {
     color: var(--white-caption) !important;
 }
 
@@ -228,7 +228,7 @@ b,#brs .med,
 .ErlEM .P7Vl4c .RCBpod,
 a.fl,.wyNFW,.VZTCjd h3,
 /* View more on hover */
-a.EbH0bb, .nXi6rb, .JwgTNb, .VDl3z, .LlMFmd, .ZEDj1b {
+a.EbH0bb, .nXi6rb, .JwgTNb, .VDl3z, .LlMFmd, .ZEDj1b, .kVLSDc, .ONo4xf.vk_bk.vk_sh {
     color: var(--soft-blue) !important;
 }
 
@@ -237,11 +237,16 @@ a.EbH0bb, .nXi6rb, .JwgTNb, .VDl3z, .LlMFmd, .ZEDj1b {
 .Ju3hxd,
 .e8fRJf,
 .fw-price-up.IsqQVc,
-.ojzJac {
+.ojzJac,
+span.vk_bk {
     color: var(--soft-green) !important;
 }
 
-.fw-price-dn.IsqQVc {
+.fw-price-dn.IsqQVc,
+.EXa2b,
+.io3RSe.ellip,
+.EXa2b.vk_sh,
+.io3RSe.vk_sh.ellip {
     color: var(--soft-red) !important;
 }
 /*******************************************************************************************************************************************/
@@ -302,6 +307,11 @@ input::placeholder {
 .sbl1 span,
 .sbl1 span b {
     color: var(--white-bold) !important;
+    font-weight: 100 !important;
+}
+/* visited text */
+.sbl1.sbl1p span {
+    color: var(--soft-purple) !important;
     font-weight: 100 !important;
 }
 /* Search suggestion items on hover */
@@ -380,8 +390,6 @@ hr {
 .xtSCL,.fNHVKc,
 /* Information card sub dividers */
 .scrt tr:first-child td,
-/* Top stories dividers */
-.EPLo7b,
 /* People also searched for */
 .cbphWd,
 /* Related Searches */
@@ -402,8 +410,13 @@ hr {
 
 /* Invisible borders */
 /* Footer */
-#fbar {
-    border-top: var(--surface-bg-color) !important;
+#fbar,
+/* Top stories dividers */
+.EPLo7b, .vk_arc, .pirr,.lEDTOb,.NcmDyc {
+    border-top: transparent !important;
+}
+.ONo4xf {
+    border-right: transparent !important;
 }
 
 /*******************************************************************************************************************************************/
@@ -419,8 +432,8 @@ g[fill="#70757a"],
 .vp45yf,
 /* Related searches search svg */
 .brs_col .search-icon,
-/* More info svg */
-.EZRelc.z1asCe.lYxQe,
+/* Share svg */
+.rsir2d,
 /* Bookmark button from job board (unsaved) */
 .NOiGgb .sb-unsaved svg,
 .xrIqbe,
@@ -450,12 +463,44 @@ g[fill="#70757a"],
 /* Texts to match svg */
 /* Related searches */
 .brs_col b,
-#brs a,
-/* More info text */
-.wUrVib, .EZRelc {
+#brs a {
     color: var(--white-average) !important;
 }
 
+/* White svgs */
+MXl0lf .EZRelc.z1asCe.lYxQe, 
+/* More info svg */
+.EZRelc.z1asCe.lYxQe {
+    color: var(--white-bold) !important;
+    fill: var(--white-bold) !important;
+}
+
+/* More info text */
+.wUrVib,
+.EZRelc {
+    color: var(--white-bold) !important;
+}
+
+/* Big white down arrow */
+.vk_ard:after {
+    border-top-color: #1b1b1b !important;
+}
+.vk_ard:before {
+    border-top-color: #5f6368 !important;
+}
+.vk_ard,
+.vk_aru {
+    background-color: #5f6368 !important;
+}
+.vk_aru:before {
+    border-bottom-color: #5f6368 !important;
+}
+.vk_aru:after {
+    border-bottom-color: #1b1b1b !important;
+}
+.N58ffb:hover .vk_ard::after {
+    border-top-color: #1b1b1b !important;
+}
 /*******************************************************************************************************************************************/
 /* Buttons and pills */
 
@@ -549,8 +594,9 @@ g-more-button > g-fab,
 a.ab_button,
 .sh-dr__prs,
 .gb_Jb.gb_Jb,
-.gb_Kb.gb_Kb {
-    border-radius: 2px !important;
+.gb_Kb.gb_Kb,
+.MXl0lf {
+    border-radius: 2px;
     background-color: var(--blue-svg-color) !important;
     color: var(--white-bold) !important;
     background-image: unset !important;
@@ -558,7 +604,8 @@ a.ab_button,
 }
 .ab_button:hover,
 .sh-dr__prs:hover,
-.gb_Jb:hover {
+.gb_Jb:hover,
+.MXl0lf:hover {
     cursor: pointer;
     border: 1px solid var(--surface-bg-color) !important;
 }
@@ -589,7 +636,8 @@ a.f9UGee:visited,
 #hdtb .hdtbItm a,
 #cdrlnk,
 .action-menu-item,
-.PfSDnb {
+.PfSDnb,
+.P5BnJb {
     background-color: var(--modal-1-bg-color) !important;
     color: var(--white-average) !important;
     border: 1px solid transparent !important;
@@ -602,7 +650,8 @@ a.f9UGee:visited,
 #cdrlnk:hover,
 .hdtbItm a:hover,
 .action-menu-item:hover,
-.PfSDnb:hover {
+.PfSDnb:hover,
+.P5BnJb:hover {
     background-color: var(--modal-1-bg-onHover-color) !important;
 }
 
@@ -641,18 +690,20 @@ g-inner-card,
 .vk_cxp,
 .cwtlwm,
 /* Related images in main */
- .LnbJhc,
+.LnbJhc g-section-with-header,
  /* Related searches in images */
  .TwNUtc,
  /* Shopping feed */
  .G9CET,
  /* Finaces */
- .vnLNtd.mnr-c {
+ .vnLNtd.mnr-c,
+ .f196ee {
     background: var(--modal-1-bg-color) !important;
     border: 0px solid transparent !important;
     box-shadow: var(--box-shadow-average) !important;
     border-radius: 8px;
     color: var(--white-average) !important;
+    overflow: hidden;
 }
 
 /* Google Accounts */
@@ -664,7 +715,7 @@ g-inner-card,
     color: var(--white-average) !important;
 }
 
-.LnbJhc {
+.LnbJhc g-section-with-header {
     padding: 16px !important;
 }
 
@@ -718,7 +769,9 @@ g-inner-card:hover,
 /* Remove underline from items */
 .rl_item.bPrEDb:hover .title,
 #rcnt a:hover,
-#brs a:hover {
+#brs a:hover,
+.y9oXvf:hover,
+.jD0Pye:hover .tKfMXd {
     text-decoration: none !important;
 }
 
@@ -938,6 +991,23 @@ g-right-button.Lu0opc.k2Oeod.eSq3C.tHT0l g-fab {
 /* image collections Icon*/
 .KA8Jyb {
     fill: var(--grey-svg-color) !important;
+}
+
+/* Logos in info panels */
+.Rlm17c.BA0A6c {
+    background-color: transparent !important;
+    border-radius: 7px !important;
+}
+
+/* Email button on google receipts */
+.ua0tn.wWYcM {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235f6368' width='18px' height='18px'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+}
+a:hover .ua0tn.wWYcM {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2388a7c7' width='18px' height='18px'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+}
+.smAkP.Uekwlc a:hover {
+    color: var(--soft-blue) !important;
 }
 
 /*******************************************************************************************************************************************/
@@ -1870,4 +1940,52 @@ li.sbsb_c:first-child .sbse {
 a.gb_pb.gb_dg.gb_kb.gb_ig svg {
     color: var(--soft-blue) !important;
     fill: var(--soft-blue) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Videos page */
+/* Remove white border */
+.th {
+    border: unset !important;
+}
+
+/* Fix results appearance */
+.rc .s {
+    display: flex;
+    margin-top: 6px;
+}
+
+.N3nEGc {
+    background-color: #000 !important;
+    margin-top: unset !important;
+}
+
+.g .rc .s div[style^='margin-left:'] {
+    margin-left: 10px !important;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+/*******************************************************************************************************************************************/
+/* PDF tag */
+.sFZIhb {
+    background-color: var(--soft-red) !important;
+    color: var(--white-bold) !important;
+    border-color: transparent !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Google receipts */
+.GBnCMb {
+    padding: 40px 20px 40px 20px !important;
+}
+.smAkP {
+    padding: 20px 0 0 0 !important;
+}
+.j1kygd {
+    padding-top: 10px !important;
+}
+.HreLL {
+    padding-top: 0px !important;
 }
