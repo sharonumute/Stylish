@@ -614,7 +614,7 @@ a.ab_button,
 .MXl0lf {
     border-radius: 2px;
     background-color: var(--blue-svg-color) !important;
-    color: var(--white-bold) !important;
+    color: #fff !important;
     background-image: unset !important;
     border: 1px solid var(--blue-svg-color) !important;
 }
@@ -2113,4 +2113,17 @@ img[id^='lr_dct_img_origin'] {
 .LiOdre:hover {
     background-color: var(--dark-input-color) !important;
     border-color: unset !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Google Search Page */
+.tfB0Bf input[type='submit'],
+.gbqfba {
+    background-image: unset !important;
+    background-color: var(--blue-svg-color) !important;
+    border: unset !important;
+    color: #fff !important;
+}
+.tfB0Bf input[type='submit']:hover {
+    color: #fff !important;
 }
