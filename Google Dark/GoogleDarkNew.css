@@ -45,6 +45,8 @@
         0 4px 8px 3px rgba(0, 0, 0, 0.15);
     --white-to-main-filter-blue-tint: invert(100%) invert(0%) sepia(10%)
         saturate(100%) hue-rotate(180deg) brightness(105%) contrast(75%);
+    --white-to-modal-1-filter: invert(100%) invert(8%) sepia(0%) saturate(0%)
+        hue-rotate(163deg) brightness(109%) contrast(95%);
 }
 
 /* Some stuff from Google Clean Dark */
@@ -189,7 +191,7 @@ b,#brs .med,
 /* Search result texts */
 .s, .P1usbc, .tKfMXd,.gG0TJc,
 /* Footer */
-.b0KoTc, #Wprf1b, .smiUbb,
+.b0KoTc, #Wprf1b, .smiUbb,.qhH8z,
 /* Card texts */
 .oNwCmf .Qk80Jf, .knFDje, .qUjgX, .azqZUd, .iF8z4d td, .ML43Jb,.vk_gy span {
     color: var(--white-average) !important;
@@ -226,7 +228,7 @@ b,#brs .med,
 .xXEKkb,
 .k4DMHe .xXEKkb,
 .ErlEM .P7Vl4c .RCBpod,
-a.fl,.wyNFW,.VZTCjd h3,
+a.fl,.wyNFW,.VZTCjd h3,.SDZsVb,.e2gLmd,
 /* View more on hover */
 a.EbH0bb, .nXi6rb, .JwgTNb, .VDl3z, .LlMFmd, .ZEDj1b, .kVLSDc, .ONo4xf.vk_bk.vk_sh {
     color: var(--soft-blue) !important;
@@ -238,7 +240,8 @@ a.EbH0bb, .nXi6rb, .JwgTNb, .VDl3z, .LlMFmd, .ZEDj1b, .kVLSDc, .ONo4xf.vk_bk.vk_
 .e8fRJf,
 .fw-price-up.IsqQVc,
 .ojzJac,
-span.vk_bk {
+span.vk_bk,
+.pdpvld {
     color: var(--soft-green) !important;
 }
 
@@ -246,7 +249,8 @@ span.vk_bk {
 .EXa2b,
 .io3RSe.ellip,
 .EXa2b.vk_sh,
-.io3RSe.vk_sh.ellip {
+.io3RSe.vk_sh.ellip,
+.hVpeib {
     color: var(--soft-red) !important;
 }
 /*******************************************************************************************************************************************/
@@ -332,6 +336,11 @@ input::placeholder {
 
 /*******************************************************************************************************************************************/
 /* Main Search page task bar */
+
+/* Taskbar minimized when scrolling */
+.minidiv .sfbg {
+    box-shadow: unset !important;
+}
 
 /* Search taskbar bar*/
 body.vasq #hdtbSum, 
@@ -577,13 +586,20 @@ g-more-button > g-fab,
 .GbaVB,
 .GbaVB:not(.tl-pp-on),
 /* Image search in main */
-.Mw2I7 {
+.Mw2I7,
+/* Dictionary result Pills */
+.MR2UAc,
+/* Dictionary filter pills */
+.BYb9Nc {
     background-color: var(--modal-3-bg-color) !important;
     border: unset !important;
     color: var(--white-average) !important;
 }
 .GbaVB:hover,
-.Mw2I7:hover {
+.Mw2I7:hover,
+/* Dictionary result Pills */ 
+.I6a0ee:hover,
+.MR2UAc:hover {
     background-color: var(--modal-3-bg-onHover-color) !important;
     border: unset !important;
     color: var(--white-average) !important;
@@ -1992,4 +2008,109 @@ a.gb_pb.gb_dg.gb_kb.gb_ig svg {
 }
 .HreLL {
     padding-top: 0px !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Dictionary */
+.gJBeNe {
+    color: var(--white-bold) !important;
+}
+/* Dictionary Search bar */
+.dw-sb-cont .dw-sbi {
+    background-color: var(--dark-input-color) !important;
+    color: var(--white-bold) !important;
+    border: none !important;
+}
+
+.dw-sb-cont .dw-sb-btn {
+    border: none !important;
+    background: var(--dark-input-color) !important;
+}
+#dw-siw,
+.dw-sb-cont {
+    background: var(--dark-input-color) !important;
+}
+.sbdd_b {
+    border-color: unset !important;
+}
+.dw-sb-cont .dw-sbs {
+    color: var(--white-caption) !important;
+}
+.dw-sb-cont .dw-sb-btn {
+    color: var(--blue-svg-color) !important;
+    cursor: pointer;
+}
+
+/* Sound button */
+.vfmVQ,
+.KnZOyc {
+    border: unset !important;
+}
+.KnZOyc {
+    color: var(--blue-svg-color) !important;
+    background-color: var(--modal-1-bg-color) !important;
+}
+
+/* Disabled pills*/
+.cO53qb {
+    background-color: var(--surface-bg-color) !important;
+    color: var(--white-disabled) !important;
+    border: unset !important;
+}
+/* Dictionary filter pills when selected */
+.lBLINb {
+    background-color: var(--soft-blue) !important;
+    border: unset !important;
+    color: #000 !important;
+}
+
+/* Content text */
+.vmod .vk_gy {
+    color: var(--white-average) !important;
+}
+
+/* Invisible borders */
+.pVFdhc {
+    background-color: unset !important;
+}
+
+/* Tags */
+.mQo3nc {
+    background-color: var(--soft-red) !important;
+    color: var(--white-bold) !important;
+}
+
+/* More titles */
+.vk_sh.vk_gy {
+    color: var(--white-bold) !important;
+}
+
+/* Images */
+#lr_dct_img_use,
+img[id^='lr_dct_img_origin'] {
+    filter: var(--white-to-modal-1-filter) !important;
+}
+
+/* Dictionary phrases */
+.BklRsd {
+    background-color: var(--modal-2-bg-color) !important;
+    border-color: transparent !important;
+    color: var(--white-average) !important;
+    border-radius: 4px !important;
+    box-shadow: var(--box-shadow-average) !important;
+}
+
+/* Dictionary translate drop down */
+.TVSh {
+    background: url(//ssl.gstatic.com/ui/v1/disclosure/grey-disclosure-arrow-up-down.png)
+        100% no-repeat var(--dark-input-color) !important;
+    border-radius: 5px;
+    color: var(--white-bold) !important;
+}
+.LiOdre {
+    border: unset !important;
+}
+.LiOdre:hover {
+    background-color: var(--dark-input-color) !important;
+    border-color: unset !important;
 }
