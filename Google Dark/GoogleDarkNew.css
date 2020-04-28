@@ -14,7 +14,7 @@ Google Packages
     --surface-bg-dip-color: #000000;
     /* Elevation 1 */
     --modal-1-bg-color: #1b1b1b;
-    --modal-1-bg-onHover-color: #252525;
+    --modal-1-bg-onHover-color: #202020;
     --modal-1-bg-dip-color: #121212;
     /* Elevation 2 */
     --modal-2-bg-color: #262626;
@@ -684,15 +684,25 @@ a.f9UGee:visited,
 }
 
 /* Modal 2 Menus */
+.czHJJ {
+    background-color: var(--modal-2-bg-color) !important;
+    box-shadow: var(--box-shadow-broad) !important;
+    color: var(--white-bold) !important;
+    font-weight: 100 !important;
+    border: 1px solid transparent !important;
+}
+
 /* Modal 2 Menu items */
-.ErsxPb {
+.ErsxPb,
+.w3RMhb {
     background-color: var(--modal-2-bg-color) !important;
     color: var(--white-average) !important;
     border: 1px solid transparent !important;
 }
 /* Modal 2 Menu items on hover */
 .gvybPb,
-.ErsxPb:active {
+.ErsxPb:active,
+.w3RMhb:hover {
     background-color: var(--modal-2-bg-onHover-color) !important;
 }
 
@@ -726,7 +736,6 @@ g-inner-card,.zo4Cze,
     box-shadow: var(--box-shadow-average) !important;
     border-radius: 8px;
     color: var(--white-average) !important;
-    overflow: hidden;
 }
 
 .TieM1d .kp-blk {
@@ -1004,7 +1013,8 @@ g-right-button.Lu0opc.k2Oeod.eSq3C.tHT0l g-fab {
 /* Taskbar tool menu, checkmark */
 .hdtbSel,
 .hdtbSel #cdrlnk,
-.fbKdEb {
+.fbKdEb,
+.w3RMhb.rlf__ami {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 24' fill='white' width='18px' height='18px'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M9 16.2l-3.5-3.5c-.39-.39-1.01-.39-1.4 0-.39.39-.39 1.01 0 1.4l4.19 4.19c.39.39 1.02.39 1.41 0L20.3 7.7c.39-.39.39-1.01 0-1.4-.39-.39-1.01-.39-1.4 0L9 16.2z'/%3E%3C/svg%3E") !important;
     background-position: left center !important;
     background-repeat: no-repeat !important;
@@ -1035,6 +1045,16 @@ a:hover .ua0tn.wWYcM {
 }
 .smAkP.Uekwlc a:hover {
     color: var(--soft-blue) !important;
+}
+
+/* Grey star rating */
+.Fam1ne {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%235f6368' width='18px' height='18px'%3E%3Cpath d='M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
+}
+
+/* light blue Direction icon */
+.VByer .TU05kd {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%2388a7c7' d='M21.71 11.29l-9-9c-.39-.39-1.02-.39-1.41 0l-9 9c-.39.39-.39 1.02 0 1.41l9 9c.39.39 1.02.39 1.41 0l9-9c.39-.38.39-1.01 0-1.41zM14 14.5V12h-4v3H8v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E") !important;
 }
 
 /*******************************************************************************************************************************************/
@@ -2129,4 +2149,90 @@ img[id^='lr_dct_img_origin'] {
 }
 .tfB0Bf input[type='submit']:hover {
     color: #fff !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Map results in search page */
+.dbg0pd {
+    color: var(--white-bold) !important;
+}
+.uMdZh {
+    color: var(--white-caption) !important;
+}
+
+.rllt__wrapped span[style='color:#d93025'] {
+    color: var(--soft-red) !important;
+}
+.VByer .UbRuwe,
+.L48Cpd .BSaJxc,
+.DLOTif,
+.L48Cpd .XBBs5 {
+    color: var(--soft-blue) !important;
+}
+
+.wYWDAd,
+.zkIadb {
+    border-top: unset !important;
+}
+
+.uMdZh:hover {
+    background-color: var(--modal-1-bg-onHover-color) !important;
+}
+.yyjhs {
+    background: var(--modal-1-bg-color) !important;
+}
+.ccBEnf {
+    border: unset !important;
+}
+
+.uMdZh .cXedhc:hover .dbg0pd {
+    text-decoration: unset !important;
+}
+
+.FZaw6b {
+    border-color: var(--grey-svg-color) transparent !important;
+    position: relative !important;
+    margin-left: 15px !important;
+}
+
+.Ae7FMe {
+    background-color: var(--dark-input-color) !important;
+    padding: 5px 8px !important;
+    border-radius: 5px !important;
+    display: flex !important;
+    flex-flow: row !important;
+    justify-content: center !important;
+    margin-right: unset !important;
+}
+
+.bcUTBf .F7IIOc {
+    background-color: var(--dark-input-color) !important;
+    display: flex !important;
+    justify-content: center !important;
+    border-radius: 5px !important;
+}
+
+.tGgE5d {
+    display: none !important;
+}
+
+.czHJJ {
+    padding: unset !important;
+}
+
+.w3RMhb .zFsEvf {
+    color: var(--white-disabled) !important;
+}
+
+/* More business button */
+.cMjHbjVt9AZ__button:active {
+    background-color: var(--modal-1-bg-onHover-color) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Maps */
+#rllhd__fldhc {
+    border-bottom: unset !important;
+    box-shadow: var(--box-shadow-average) !important;
+    background-color: var(--surface-bg-color) !important;
 }
