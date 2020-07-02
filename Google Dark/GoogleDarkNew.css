@@ -170,6 +170,8 @@ cite a:visited,
 
 /* Bold texts */
 h3[role=heading],
+.Z0LcW,
+.ep3ODe .V2Zq0e,
 /* Info card title text */
 .Ss2Faf,.kno-ecr-pt,
 .w8qArf .fl,.XiMyEd,
@@ -194,7 +196,7 @@ b,#brs .med,
 
 /* Average texts */
 /* Info card external sources */
-.Eegi6c,
+.Eegi6c, .i29hTd .qLLird, .i29hTd .kR7nSc,
 /* Info card texts */
 .uDMnUc, .xtObwd, .GrfNd, .ooYbic, .oIcuye, .yxsAke,.y8Jpof .LrzXr,
 /* Search result texts */
@@ -415,7 +417,8 @@ hr {
     border-top: var(--silver-border) !important;
 }
 /* Information card sub dividers */
-.scrt td {
+.scrt td,
+div[style='border-bottom:1px solid #EBEBEB'] {
     border-bottom: var(--silver-border) !important;
 }
 
@@ -433,6 +436,14 @@ hr {
 }
 .ONo4xf {
     border-right: transparent !important;
+}
+
+.ep3ODe .eEz1Rd {
+    border-top: 1px solid transparent !important;
+}
+
+.DYMkgd {
+    background: var(--surface-bg-color) !important;
 }
 
 /*******************************************************************************************************************************************/
@@ -617,13 +628,17 @@ g-more-button > g-fab,
 a.ab_button,
 .sh-dr__prs,
 .gb_Jb.gb_Jb,
-.gb_Kb.gb_Kb,
-.MXl0lf {
+.gb_Kb.gb_Kb {
     border-radius: 2px;
     background-color: var(--blue-svg-color) !important;
     color: #fff !important;
     background-image: unset !important;
     border: 1px solid var(--blue-svg-color) !important;
+}
+.MXl0lf {
+    background-color: var(--blue-svg-color) !important;
+    color: #000 !important;
+    border: 1px solid transparent !important;
 }
 .ab_button:hover,
 .sh-dr__prs:hover,
@@ -712,7 +727,7 @@ a.f9UGee:visited,
 /* Main search page cards */
 g-card,
 /* Feature Snippets, "Peaople Also Search For" and Knowledge Panel */
-.kp-blk,.TieM1d,
+.kp-blk,.TieM1d, .rhscol .I6TXqe,
 /* Top stories */
 .qmv19b,
 /* Result feed cards */
@@ -730,7 +745,9 @@ g-inner-card,.zo4Cze,
  .G9CET,
  /* Finaces */
  .vnLNtd.mnr-c,
- .f196ee {
+ .f196ee,
+ /* Related songs */
+ .ep3ODe .lgJJud {
     background: var(--modal-1-bg-color) !important;
     border: 0px solid transparent !important;
     box-shadow: var(--box-shadow-average) !important;
@@ -758,13 +775,22 @@ g-inner-card,.zo4Cze,
 /* Result feed within card */
 .PZPZlf.MRfBrb.kno-vrt-t, 
 /* Games and toys and tools */
-.pqHExb {
+.pqHExb,
+/* Result feed top */
+.llgymd {
     background-color: var(--modal-1-bg-color) !important;
     border-color: transparent !important;
     color: var(--white-average) !important;
     border-radius: 4px !important;
     margin-right: 10px !important;
     box-shadow: unset !important;
+}
+.ANCoQe {
+    color: var(--white-average) !important;
+}
+/* Result feed top: select */
+.j1Fmbd {
+    border-bottom: 4px solid var(--soft-green) !important;
 }
 
 /* Whole cards on hover */
@@ -773,7 +799,9 @@ g-inner-card:hover,
 .PZPZlf.MRfBrb.kno-vrt-t:hover,
 .pqHExb:hover,.zo4Cze:hover,
 /* Shopping feed */
-.G9CET:hover {
+.G9CET:hover,
+/* Result feed top */
+.llgymd:hover {
     background-color: var(--modal-1-bg-onHover-color) !important;
 }
 
@@ -788,11 +816,20 @@ g-inner-card:hover,
 .rl_item_base,
 #rhs .y8Jpof.rhsvw,
 /* Job board */
-.iFjolb {
+.iFjolb,
+/* Related songs */
+.EASEnb {
     background: var(--modal-1-bg-color) !important;
     color: var(--white-average) !important;
     border: 0 solid var(--silver-border-color) !important;
     box-shadow: unset !important;
+}
+/* Related songs */
+.EASEnb {
+    border-radius: 4px !important;
+}
+.f3LoEf {
+    color: var(--white-average) !important;
 }
 /* Google accounts */
 .gb_Rb,
@@ -817,7 +854,8 @@ g-inner-card:hover,
 #rcnt .rl_item:hover,
 #rhs .y8Jpof.rhsvw:hover,
 /* Job board */
-.iFjolb:hover {
+.iFjolb:hover,
+.EASEnb:hover {
     background: var(--modal-1-bg-onHover-color) !important;
     text-decoration: unset !important;
     border-radius: inherit;
@@ -885,6 +923,31 @@ g-inner-card:hover,
 /* Other card fixes */
 #rhs .Lj180d {
     padding-bottom: 15px !important;
+}
+
+/* Background flat modal */
+.AUiS2 {
+    border: var(--silver-border) !important;
+}
+
+/*Large search results */
+/* Internal border */
+.E6Cqjb {
+    background-color: var(--silver-border-color) !important;
+}
+#rso .up3SVe .kno-vrt-t a {
+    display: block !important;
+}
+
+#rso .up3SVe .kno-vrt-t a div .oBrLN {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+}
+
+.C9iYEe {
+    color: var(--white-caption) !important;
 }
 
 /*******************************************************************************************************************************************/
@@ -2235,4 +2298,28 @@ img[id^='lr_dct_img_origin'] {
     border-bottom: unset !important;
     box-shadow: var(--box-shadow-average) !important;
     background-color: var(--surface-bg-color) !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Converter */
+/* Dropdown */
+.LNn04b {
+    background-color: var(--modal-2-bg-color) !important;
+    border: 1px solid var(--surface-bg-color) !important;
+    color: var(--white-bold) !important;
+}
+
+.LNn04b:hover {
+    background-color: var(--modal-2-bg-onHover-color) !important;
+    color: var(--white-bold) !important;
+    cursor: pointer;
+}
+
+.LNn04b:focus {
+    outline: transparent auto 0px !important;
+}
+
+/* Formula tag */
+.NIzGle {
+    background-color: #e08000 !important;
 }
