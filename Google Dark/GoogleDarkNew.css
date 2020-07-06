@@ -42,7 +42,7 @@ Google Packages
     --soft-green: #3d9970;
     --grey-svg-color: #5f6368;
     --blue-svg-color: #4285f4;
-    --white-button-color: #e8f0fe;
+    --white-button-color: #b8c2d5;
     /* Border and shadows */
     --silver-border-color: rgba(223, 225, 229, 0.1);
     --silver-border: 1px solid var(--silver-border-color);
@@ -430,7 +430,7 @@ hr {
 /* Dropdown tools */
 #vjyzWd,
 /* More in card stuff */
-.wQncmd a, .ZldK9c, .Ff5uNc, .jbcYye, .veys4e {
+.wQncmd a, .ZldK9c, .Ff5uNc, .jbcYye, .veys4e, .h7eyVe {
     border-top: var(--silver-border) !important;
 }
 /* Information card sub dividers */
@@ -692,8 +692,8 @@ a.ab_button,
 
 /* Selected */
 .WGYX8[selected] {
-    background-color: var(--soft-blue) !important;
-    border: 1px solid var(--soft-blue) !important;
+    background-color: var(--white-button-color) !important;
+    border: 1px solid var(--white-button-color) !important;
     color: var(--modal-1-bg-color) !important;
 }
 
@@ -783,7 +783,8 @@ a.f9UGee:visited,
 .hdtbItm a:hover,
 .action-menu-item:hover,
 .PfSDnb:hover,
-.P5BnJb:hover {
+.P5BnJb:hover,
+.y8Jpof:hover {
     background-color: var(--modal-1-bg-onHover-color) !important;
 }
 
@@ -2492,6 +2493,9 @@ img[id^='lr_dct_img_origin'] {
     color: var(--white-bold) !important;
 }
 /* Pills */
+.pcxvjc {
+    background-color: var(--white-button-color) !important;
+}
 .WL1JNe {
     color: var(--modal-1-bg-color) !important;
 }
@@ -2501,6 +2505,7 @@ img[id^='lr_dct_img_origin'] {
 
 /* side menu buttons */
 .iFBpgc .LfE12c.iqv4K .MjJo9 {
+    background: var(--white-button-color) !important;
     color: var(--surface-bg-color) !important;
 }
 
@@ -2544,4 +2549,50 @@ img[id^='lr_dct_img_origin'] {
 
 .LXtP0 .ZXb90b {
     padding: 4px !important;
+}
+
+/*******************************************************************************************************************************************/
+/* Nutrition Knowledge panel */
+.AYBNrd {
+    background-color: var(--modal-1-bg-color) !important;
+    border-top: var(--silver-border) !important;
+}
+.AYBNrd td {
+    border-top: var(--silver-border) !important;
+}
+.V6Ytv {
+    color: var(--white-bold) !important;
+}
+
+.HIf9ae {
+    background-color: var(--dark-input-color) !important;
+    border-radius: var(--modal-card-radius) !important;
+    padding: 2px 8px !important;
+}
+.Ev4pye {
+    background-color: var(--dark-input-color) !important;
+    color: var(--white-bold) !important;
+}
+.Gbo8Ne {
+    border-bottom: var(--silver-border) !important;
+}
+
+span[style='color:#c00'] {
+    color: var(--soft-red) !important;
+}
+
+.wq4Aab {
+    border-bottom: var(--silver-border) !important;
+}
+
+.uOaWdb,
+.B9EXRd {
+    background-color: var(--surface-bg-color) !important;
+}
+.avoNH,
+.ca8It {
+    color: var(--white-bold) !important;
+}
+.mZa94d {
+    color: var(--white-caption) !important;
 }
