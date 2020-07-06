@@ -197,7 +197,7 @@ b,#brs .med,
 #foot .AaVjTc .YyVfkd,
 .eJ7tvc, .PyJv1b, .jtEFhd .KYeOtb, .NprOob, .CCb0ac, .CCb0ac a, .bTuXH.vk_sh.ellip, .vk_bk.vk_sh,
 /* Card Texts */
-.m7B03, .O2TtKe, .CEMjEf, .R7GtFd, .W7Av8d, .V4tsWe {
+.m7B03, .O2TtKe, .CEMjEf, .R7GtFd, .W7Av8d, .V4tsWe, .tuHUkb {
     color: var(--white-bold) !important;
 }
 
@@ -474,6 +474,11 @@ div[style='border-bottom:1px solid #EBEBEB'],
 
 .qyEGdc td:not(:last-child) {
     border-right: var(--silver-border) !important;
+}
+
+.d7sCQ,
+.jktSrf td {
+    border: unset !important;
 }
 
 /*******************************************************************************************************************************************/
