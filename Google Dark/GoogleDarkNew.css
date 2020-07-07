@@ -2601,3 +2601,79 @@ span[style='color:#c00'] {
 .mZa94d {
     color: var(--white-caption) !important;
 }
+
+/*******************************************************************************************************************************************/
+/* Google translate */
+
+#tw-source-text-container .tw-ta,
+#tw-source-rmn-container .tw-ta,
+.language_list_item,
+.QXzCSe,
+.SvKTZc {
+    color: var(--white-bold) !important;
+}
+#tw-target,
+.zaokob {
+    background-color: var(--modal-1-bg-color) !important;
+}
+.gt-is {
+    background-color: transparent !important;
+}
+
+.gt-is-itm {
+    background-color: var(--white-button-color) !important;
+    color: var(--modal-1-bg-color) !important;
+}
+.gt-is-cont,
+.gt-is-act.goog-control {
+    color: var(--modal-1-bg-color) !important;
+}
+.tw-menu-btn,
+.bHOicb {
+    color: var(--grey-svg-color) !important;
+}
+.hhB0V {
+    color: var(--soft-blue) !important;
+}
+.language_list_languages.tw-ll-top::after {
+    background: linear-gradient(
+        to bottom,
+        rgba(27, 27, 27, 0),
+        rgba(27, 27, 27, 1)
+    ) !important;
+    content: '';
+}
+
+.tw-lliw:hover,
+.tw-lliw:focus,
+.tw-bilingual-marked {
+    background: var(--modal-1-bg-onHover-color) !important;
+}
+
+#tw-target-rmn.tw-data-text,
+#tw-source-rmn.tw-data-text {
+    color: var(--white-caption) !important;
+}
+
+.Xy35sb {
+    background: var(--modal-2-bg-color) !important;
+    border: 1px solid transparent !important;
+    box-shadow: var(--box-shadow-tiny) !important;
+}
+
+.PiP5T,
+.yieLWc {
+    border-bottom-color: var(--modal-2-bg-color) !important;
+}
+
+.tw-bilingual-pos,
+.MaH2Hf {
+    color: var(--white-average) !important;
+}
+.bHOicb {
+    border-top: var(--silver-border) !important;
+}
+
+.bHOicb:focus {
+    outline: unset !important;
+}
